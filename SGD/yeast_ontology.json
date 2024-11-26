@@ -1,0 +1,3135 @@
+{
+ "source": {
+   "name": "SGD",
+   "link": "https://www.yeastgenome.org"
+  },
+  "datas": [
+    {
+        "ontologyId": "APO:0000271",
+        "name": "RNA modification",
+        "description": "Covalent modification of a specified RNA; type of modification specified.",
+        "upstream": "APO:0000094",
+        "downstream": [
+
+        ],
+        "qualifiers": [
+            "APO:0000002",
+            "APO:0000003",
+            "APO:0000005",
+            "APO:0000004",
+            "APO:0000245"
+        ]
+    },
+    {
+        "ontologyId": "APO:0000022",
+        "name": "protein activity",
+        "description": "The enzymatic or other activity of a protein.",
+        "upstream": "APO:0000094",
+        "downstream": [
+
+        ],
+        "qualifiers": [
+            "APO:0000249",
+            "APO:0000004",
+            "APO:0000005",
+            "APO:0000002",
+            "APO:0000003",
+            "APO:0000117",
+            "APO:0000245"
+        ]
+    },
+    {
+        "ontologyId": "APO:0000095",
+        "name": "chemical compound accumulation",
+        "description": "The production and/or storage of a specified chemical compound.",
+        "upstream": "APO:0000094",
+        "downstream": [
+
+        ],
+        "qualifiers": [
+            "APO:0000249",
+            "APO:0000003",
+            "APO:0000004",
+            "APO:0000005",
+            "APO:0000002",
+            "APO:0000117",
+            "APO:0000245",
+            "APO:0000246"
+        ]
+    },
+    {
+        "ontologyId": "APO:0000097",
+        "name": "auxotrophy",
+        "description": "The inability of an organism to synthesize a specified organic compound required for its growth.",
+        "upstream": "APO:0000096",
+        "downstream": [
+
+        ],
+        "qualifiers": [
+
+        ]
+    },
+    {
+        "ontologyId": "APO:0000308",
+        "name": "fermentative growth",
+        "description": "Growth while utilizing a fermentable carbon source.",
+        "upstream": "APO:0000101",
+        "downstream": [
+
+        ],
+        "qualifiers": [
+            "APO:0000252",
+            "APO:0000246",
+            "APO:0000004",
+            "APO:0000003",
+            "APO:0000005",
+            "APO:0000245"
+        ]
+    },
+    {
+        "ontologyId": "APO:0000101",
+        "name": "fermentative metabolism",
+        "description": "Growth with energy derived from fermentation; growth on a fermentable carbon source such as glucose.",
+        "upstream": "APO:0000098",
+        "downstream": [
+            "APO:0000308"
+        ],
+        "qualifiers": [
+            "APO:0000003",
+            "APO:0000004",
+            "APO:0000005",
+            "APO:0000002",
+            "APO:0000245",
+            "APO:0000246",
+            "APO:0000249"
+        ]
+    },
+    {
+        "ontologyId": "APO:0000145",
+        "name": "oxidative phosphorylation",
+        "description": "The oxidation of nutrients to generate ATP, performed by enzymes of the mitochondrial inner membrane.",
+        "upstream": "APO:0000102",
+        "downstream": [
+
+        ],
+        "qualifiers": [
+            "APO:0000004",
+            "APO:0000003"
+        ]
+    },
+    {
+        "ontologyId": "APO:0000104",
+        "name": "mitochondrial rho- mutation frequency",
+        "description": "The frequency with rho- (rho minus) mutations occur, In this process, all of the mitochondrial genome except for a relatively short segment is lost. The retained segment is amplified and reiterated in a circular genome that is roughly the size of the wild-type genome.",
+        "upstream": "APO:0000105",
+        "downstream": [
+
+        ],
+        "qualifiers": [
+            "APO:0000004",
+            "APO:0000003"
+        ]
+    },
+    {
+        "ontologyId": "APO:0000105",
+        "name": "mitochondrial genome maintenance",
+        "description": "The maintenance of a stable and complete mitochondrial genome.",
+        "upstream": "APO:0000102",
+        "downstream": [
+            "APO:0000104"
+        ],
+        "qualifiers": [
+            "APO:0000003",
+            "APO:0000117",
+            "APO:0000002",
+            "APO:0000005",
+            "APO:0000004"
+        ]
+    },
+    {
+        "ontologyId": "APO:0000154",
+        "name": "petite-negative",
+        "description": "The petite-negative phenotype arises from mutation in a nuclear gene that is not essential in an otherwise wild-type strain with an intact mitochondrial genome, but becomes essential in strains lacking the mitochondrial genome, referred to as rho- or rho0. Petite-negative strains cannot grow on fermentable carbon sources (e.g., glucose) in the absence of an intact mitochondrial genome. This phenotype is often assayed as the inability grow in the presence of ethidium bromide, which causes the loss of the mitochondrial genome.",
+        "upstream": "APO:0000102",
+        "downstream": [
+
+        ],
+        "qualifiers": [
+
+        ]
+    },
+    {
+        "ontologyId": "APO:0000153",
+        "name": "petite",
+        "description": "The formation of smaller than wild-type colonies on fermentable carbon sources (e.g., glucose), due to a respiratory defect. The respiratory defect could result from mutation or loss of the mitochondrial genome, or from a nuclear mutation affecting respiration. The fermentation of glucose produces ethanol, which is metabolized by the respiratory pathway in wild-type cells and contributes to colony size; respiratory-deficient mutants are unable to utilize this ethanol.",
+        "upstream": "APO:0000102",
+        "downstream": [
+
+        ],
+        "qualifiers": [
+
+        ]
+    },
+    {
+        "ontologyId": "APO:0000309",
+        "name": "respiratory growth",
+        "description": "Growth while utilizing a nonfermentable carbon source.",
+        "upstream": "APO:0000102",
+        "downstream": [
+
+        ],
+        "qualifiers": [
+            "APO:0000005",
+            "APO:0000245",
+            "APO:0000252",
+            "APO:0000117",
+            "APO:0000246",
+            "APO:0000003",
+            "APO:0000004",
+            "APO:0000249"
+        ]
+    },
+    {
+        "ontologyId": "APO:0000102",
+        "name": "respiratory metabolism",
+        "description": "Growth with energy derived from respiration; growth on a non-fermentable carbon source. Examples of non-fermentable carbon sources include glycerol, ethanol, and lactate.",
+        "upstream": "APO:0000098",
+        "downstream": [
+            "APO:0000145",
+            "APO:0000105",
+            "APO:0000154",
+            "APO:0000153",
+            "APO:0000309"
+        ],
+        "qualifiers": [
+            "APO:0000003",
+            "APO:0000002",
+            "APO:0000004",
+            "APO:0000005",
+            "APO:0000117",
+            "APO:0000245",
+            "APO:0000246"
+        ]
+    },
+    {
+        "ontologyId": "APO:0000098",
+        "name": "utilization of carbon source",
+        "description": "The ability to utilize the specified compound as a carbon source.",
+        "upstream": "APO:0000096",
+        "downstream": [
+            "APO:0000101",
+            "APO:0000102"
+        ],
+        "qualifiers": [
+            "APO:0000005",
+            "APO:0000004",
+            "APO:0000003",
+            "APO:0000246",
+            "APO:0000117",
+            "APO:0000002",
+            "APO:0000249",
+            "APO:0000245"
+        ]
+    },
+    {
+        "ontologyId": "APO:0000099",
+        "name": "utilization of nitrogen source",
+        "description": "The ability to utilize the specified compound as a source of nitrogen.",
+        "upstream": "APO:0000096",
+        "downstream": [
+
+        ],
+        "qualifiers": [
+            "APO:0000003",
+            "APO:0000005",
+            "APO:0000002",
+            "APO:0000245",
+            "APO:0000004"
+        ]
+    },
+    {
+        "ontologyId": "APO:0000100",
+        "name": "nutrient uptake",
+        "description": "Uptake of nutrients into a cell.",
+        "upstream": "APO:0000096",
+        "downstream": [
+
+        ],
+        "qualifiers": [
+            "APO:0000003",
+            "APO:0000004",
+            "APO:0000005",
+            "APO:0000250",
+            "APO:0000245",
+            "APO:0000117",
+            "APO:0000246"
+        ]
+    },
+    {
+        "ontologyId": "APO:0000125",
+        "name": "utilization of phosphorus source",
+        "description": "The ability to utilize the specified compound as a source of phosphorus.",
+        "upstream": "APO:0000096",
+        "downstream": [
+
+        ],
+        "qualifiers": [
+            "APO:0000003",
+            "APO:0000117"
+        ]
+    },
+    {
+        "ontologyId": "APO:0000157",
+        "name": "utilization of iron source",
+        "description": "The ability to utilize the specified compound as a source of iron.",
+        "upstream": "APO:0000096",
+        "downstream": [
+
+        ],
+        "qualifiers": [
+            "APO:0000003"
+        ]
+    },
+    {
+        "ontologyId": "APO:0000219",
+        "name": "utilization of sulfur source",
+        "description": "The ability to utilize the specified compound as a source of sulfur.",
+        "upstream": "APO:0000096",
+        "downstream": [
+
+        ],
+        "qualifiers": [
+            "APO:0000003",
+            "APO:0000005"
+        ]
+    },
+    {
+        "ontologyId": "APO:0000096",
+        "name": "nutrient utilization",
+        "description": "The ability to utilize specified substances as nutrients.",
+        "upstream": "APO:0000094",
+        "downstream": [
+            "APO:0000097",
+            "APO:0000098",
+            "APO:0000099",
+            "APO:0000100",
+            "APO:0000125",
+            "APO:0000157",
+            "APO:0000219"
+        ],
+        "qualifiers": [
+            "APO:0000003",
+            "APO:0000004",
+            "APO:0000002",
+            "APO:0000005"
+        ]
+    },
+    {
+        "ontologyId": "APO:0000109",
+        "name": "survival rate in stationary phase",
+        "description": "The rate of survival in liquid stationary phase cultures.",
+        "upstream": "APO:0000106",
+        "downstream": [
+
+        ],
+        "qualifiers": [
+            "APO:0000004",
+            "APO:0000003",
+            "APO:0000117"
+        ]
+    },
+    {
+        "ontologyId": "APO:0000311",
+        "name": "growth in post-diauxic phase",
+        "description": "Growth in liquid culture during the post-diauxic phase.",
+        "upstream": "APO:0000106",
+        "downstream": [
+
+        ],
+        "qualifiers": [
+
+        ]
+    },
+    {
+        "ontologyId": "APO:0000310",
+        "name": "growth in exponential phase",
+        "description": "Growth in liquid culture during the exponential phase.",
+        "upstream": "APO:0000106",
+        "downstream": [
+
+        ],
+        "qualifiers": [
+            "APO:0000252",
+            "APO:0000245",
+            "APO:0000003",
+            "APO:0000246",
+            "APO:0000004",
+            "APO:0000117",
+            "APO:0000005",
+            "APO:0000249",
+            "APO:0000250"
+        ]
+    },
+    {
+        "ontologyId": "APO:0000106",
+        "name": "vegetative growth",
+        "description": "Growth under standard culture conditions (liquid or solid media).",
+        "upstream": "APO:0000094",
+        "downstream": [
+            "APO:0000109",
+            "APO:0000311",
+            "APO:0000310"
+        ],
+        "qualifiers": [
+            "APO:0000117",
+            "APO:0000003",
+            "APO:0000245",
+            "APO:0000005",
+            "APO:0000002",
+            "APO:0000004",
+            "APO:0000246",
+            "APO:0000250",
+            "APO:0000252",
+            "APO:0000249"
+        ]
+    },
+    {
+        "ontologyId": "APO:0000149",
+        "name": "protein/peptide accumulation",
+        "description": "Abundance of a specified peptide/protein; production to a certain level.",
+        "upstream": "APO:0000094",
+        "downstream": [
+
+        ],
+        "qualifiers": [
+            "APO:0000251",
+            "APO:0000246",
+            "APO:0000117",
+            "APO:0000003",
+            "APO:0000004",
+            "APO:0000005",
+            "APO:0000002",
+            "APO:0000249",
+            "APO:0000245"
+        ]
+    },
+    {
+        "ontologyId": "APO:0000209",
+        "name": "protein/peptide distribution",
+        "description": "The location(s) where the specified protein is found within the cell.",
+        "upstream": "APO:0000094",
+        "downstream": [
+
+        ],
+        "qualifiers": [
+            "APO:0000002",
+            "APO:0000004",
+            "APO:0000003",
+            "APO:0000117",
+            "APO:0000249",
+            "APO:0000005",
+            "APO:0000248"
+        ]
+    },
+    {
+        "ontologyId": "APO:0000307",
+        "name": "anaerobic growth",
+        "description": "Growth in the absence of oxygen.",
+        "upstream": "APO:0000210",
+        "downstream": [
+
+        ],
+        "qualifiers": [
+            "APO:0000004",
+            "APO:0000005",
+            "APO:0000245",
+            "APO:0000003"
+        ]
+    },
+    {
+        "ontologyId": "APO:0000210",
+        "name": "anaerobic metabolism",
+        "description": "Metabolism during growth in the absence of oxygen.",
+        "upstream": "APO:0000094",
+        "downstream": [
+            "APO:0000307"
+        ],
+        "qualifiers": [
+
+        ]
+    },
+    {
+        "ontologyId": "APO:0000222",
+        "name": "chemical compound excretion",
+        "description": "The excretion from the cell of a specified chemical compound.",
+        "upstream": "APO:0000094",
+        "downstream": [
+
+        ],
+        "qualifiers": [
+            "APO:0000004",
+            "APO:0000003",
+            "APO:0000246",
+            "APO:0000002",
+            "APO:0000245"
+        ]
+    },
+    {
+        "ontologyId": "APO:0000224",
+        "name": "RNA accumulation",
+        "description": "Abundance of a specified RNA or class of RNAs.",
+        "upstream": "APO:0000094",
+        "downstream": [
+
+        ],
+        "qualifiers": [
+            "APO:0000251",
+            "APO:0000004",
+            "APO:0000117",
+            "APO:0000005",
+            "APO:0000003",
+            "APO:0000002",
+            "APO:0000249",
+            "APO:0000245",
+            "APO:0000246"
+        ]
+    },
+    {
+        "ontologyId": "APO:0000131",
+        "name": "protein/peptide modification",
+        "description": "The covalent modification of a specified protein.",
+        "upstream": "APO:0000094",
+        "downstream": [
+
+        ],
+        "qualifiers": [
+            "APO:0000005",
+            "APO:0000117",
+            "APO:0000003",
+            "APO:0000004",
+            "APO:0000002",
+            "APO:0000249",
+            "APO:0000248",
+            "APO:0000245",
+            "APO:0000246",
+            "APO:0000251"
+        ]
+    },
+    {
+        "ontologyId": "APO:0000218",
+        "name": "redox state",
+        "description": "The balance of oxidized and reduced molecules in the cell. Respiration and various environmental factors cause formation of reactive oxygen species which can oxidize and damage cellular components.",
+        "upstream": "APO:0000094",
+        "downstream": [
+
+        ],
+        "qualifiers": [
+            "APO:0000002",
+            "APO:0000003"
+        ]
+    },
+    {
+        "ontologyId": "APO:0000094",
+        "name": "metabolism and growth",
+        "description": "Processes relating to metabolism and growth.",
+        "upstream": "phenotype",
+        "downstream": [
+            "APO:0000271",
+            "APO:0000022",
+            "APO:0000095",
+            "APO:0000096",
+            "APO:0000106",
+            "APO:0000149",
+            "APO:0000209",
+            "APO:0000210",
+            "APO:0000222",
+            "APO:0000224",
+            "APO:0000131",
+            "APO:0000218"
+        ],
+        "qualifiers": [
+
+        ]
+    },
+    {
+        "ontologyId": "APO:0000051",
+        "name": "cell shape",
+        "description": "The shape of the cell.",
+        "upstream": "APO:0000050",
+        "downstream": [
+
+        ],
+        "qualifiers": [
+            "APO:0000002",
+            "APO:0000117"
+        ]
+    },
+    {
+        "ontologyId": "APO:0000142",
+        "name": "critical cell size at G2/M (cryptic G2/M cell size checkpoint)",
+        "description": "The cell volume (or size) which must be attained before cells can pass from G2 into M phase and commit to the completion of mitosis. This normally cryptic checkpoint negatively regulates passage from G2 into M phase.",
+        "upstream": "APO:0000052",
+        "downstream": [
+
+        ],
+        "qualifiers": [
+
+        ]
+    },
+    {
+        "ontologyId": "APO:0000141",
+        "name": "critical cell size at START (G1 cell-size checkpoint)",
+        "description": "The cell volume (or size) which must be attained before cells can pass through START, a checkpoint which operates in G1, and commit to a full round of cell division.",
+        "upstream": "APO:0000052",
+        "downstream": [
+
+        ],
+        "qualifiers": [
+            "APO:0000003",
+            "APO:0000004"
+        ]
+    },
+    {
+        "ontologyId": "APO:0000052",
+        "name": "cell size",
+        "description": "The size of the cell.",
+        "upstream": "APO:0000050",
+        "downstream": [
+            "APO:0000142",
+            "APO:0000141"
+        ],
+        "qualifiers": [
+            "APO:0000117",
+            "APO:0000003",
+            "APO:0000004",
+            "APO:0000002"
+        ]
+    },
+    {
+        "ontologyId": "APO:0000056",
+        "name": "bud neck morphology",
+        "description": "The size or shape of the bud neck, which is the region where the bud joins the mother cell.",
+        "upstream": "APO:0000050",
+        "downstream": [
+
+        ],
+        "qualifiers": [
+            "APO:0000002"
+        ]
+    },
+    {
+        "ontologyId": "APO:0000212",
+        "name": "bud morphology",
+        "description": "The size or shape of the bud.",
+        "upstream": "APO:0000050",
+        "downstream": [
+
+        ],
+        "qualifiers": [
+            "APO:0000002",
+            "APO:0000117",
+            "APO:0000003"
+        ]
+    },
+    {
+        "ontologyId": "APO:0000223",
+        "name": "mating projection morphology",
+        "description": "The outward appearance or shape of the mating projection.",
+        "upstream": "APO:0000050",
+        "downstream": [
+
+        ],
+        "qualifiers": [
+            "APO:0000005",
+            "APO:0000002"
+        ]
+    },
+    {
+        "ontologyId": "APO:0000270",
+        "name": "endoplasmic reticulum morphology",
+        "description": "The size, shape, or appearance of the endoplasmic reticulum (ER) or its parts.",
+        "upstream": "APO:0000303",
+        "downstream": [
+
+        ],
+        "qualifiers": [
+            "APO:0000002",
+            "APO:0000117"
+        ]
+    },
+    {
+        "ontologyId": "APO:0000119",
+        "name": "size of nucleus",
+        "description": "The size of the nucleus.",
+        "upstream": "APO:0000057",
+        "downstream": [
+
+        ],
+        "qualifiers": [
+            "APO:0000003",
+            "APO:0000004"
+        ]
+    },
+    {
+        "ontologyId": "APO:0000335",
+        "name": "size of nucleolus",
+        "description": "The size of the nucleolus.",
+        "upstream": "APO:0000273",
+        "downstream": [
+
+        ],
+        "qualifiers": [
+            "APO:0000004",
+            "APO:0000003"
+        ]
+    },
+    {
+        "ontologyId": "APO:0000273",
+        "name": "nucleolar morphology",
+        "description": "The size, shape, or appearance of the nucleolus or its parts.",
+        "upstream": "APO:0000057",
+        "downstream": [
+            "APO:0000335"
+        ],
+        "qualifiers": [
+            "APO:0000002"
+        ]
+    },
+    {
+        "ontologyId": "APO:0000057",
+        "name": "nuclear morphology",
+        "description": "The size, shape, or appearance of the nucleus.",
+        "upstream": "APO:0000303",
+        "downstream": [
+            "APO:0000119",
+            "APO:0000273"
+        ],
+        "qualifiers": [
+            "APO:0000002"
+        ]
+    },
+    {
+        "ontologyId": "APO:0000058",
+        "name": "peroxisomal morphology",
+        "description": "The size, shape, or appearance of the peroxisomes.",
+        "upstream": "APO:0000303",
+        "downstream": [
+
+        ],
+        "qualifiers": [
+            "APO:0000002",
+            "APO:0000005"
+        ]
+    },
+    {
+        "ontologyId": "APO:0000059",
+        "name": "vacuolar morphology",
+        "description": "The size, shape, or appearance of the vacuole.",
+        "upstream": "APO:0000303",
+        "downstream": [
+
+        ],
+        "qualifiers": [
+            "APO:0000002",
+            "APO:0000005",
+            "APO:0000003"
+        ]
+    },
+    {
+        "ontologyId": "APO:0000243",
+        "name": "Golgi morphology",
+        "description": "The size, shape or appearance of the Golgi apparatus or its parts.",
+        "upstream": "APO:0000303",
+        "downstream": [
+
+        ],
+        "qualifiers": [
+            "APO:0000002"
+        ]
+    },
+    {
+        "ontologyId": "APO:0000303",
+        "name": "endomembrane system morphology",
+        "description": "The size, shape, or appearance of components of the endomembrane system, which includes the nuclear envelope, endoplasmic reticulum, Golgi apparatus, peroxisomes, vacuoles, and endocytic and exocytic vesicles.",
+        "upstream": "APO:0000226",
+        "downstream": [
+            "APO:0000270",
+            "APO:0000057",
+            "APO:0000058",
+            "APO:0000059",
+            "APO:0000243"
+        ],
+        "qualifiers": [
+            "APO:0000002"
+        ]
+    },
+    {
+        "ontologyId": "APO:0000199",
+        "name": "chitin deposition",
+        "description": "The pattern of chitin deposition in the cell wall.",
+        "upstream": "APO:0000053",
+        "downstream": [
+
+        ],
+        "qualifiers": [
+            "APO:0000002",
+            "APO:0000003",
+            "APO:0000004",
+            "APO:0000117"
+        ]
+    },
+    {
+        "ontologyId": "APO:0000221",
+        "name": "septum formation",
+        "description": "Formation of a septum between dividing cells.",
+        "upstream": "APO:0000053",
+        "downstream": [
+
+        ],
+        "qualifiers": [
+            "APO:0000003",
+            "APO:0000002",
+            "APO:0000005"
+        ]
+    },
+    {
+        "ontologyId": "APO:0000053",
+        "name": "cell wall morphology",
+        "description": "The size, shape, or appearance of the cell wall.",
+        "upstream": "APO:0000226",
+        "downstream": [
+            "APO:0000199",
+            "APO:0000221"
+        ],
+        "qualifiers": [
+            "APO:0000002"
+        ]
+    },
+    {
+        "ontologyId": "APO:0000120",
+        "name": "actin cytoskeleton morphology",
+        "description": "The size, shape, or appearance of the actin cytoskeleton.",
+        "upstream": "APO:0000054",
+        "downstream": [
+
+        ],
+        "qualifiers": [
+            "APO:0000002",
+            "APO:0000117"
+        ]
+    },
+    {
+        "ontologyId": "APO:0000214",
+        "name": "position of spindle pole body",
+        "description": "The position of the mitotic or meiotic spindle pole body.",
+        "upstream": "APO:0000213",
+        "downstream": [
+
+        ],
+        "qualifiers": [
+            "APO:0000002",
+            "APO:0000117"
+        ]
+    },
+    {
+        "ontologyId": "APO:0000213",
+        "name": "spindle morphology",
+        "description": "The size, shape, or appearance of the mitotic or meiotic spindle.",
+        "upstream": "APO:0000054",
+        "downstream": [
+            "APO:0000214"
+        ],
+        "qualifiers": [
+            "APO:0000002",
+            "APO:0000005"
+        ]
+    },
+    {
+        "ontologyId": "APO:0000054",
+        "name": "cytoskeleton morphology",
+        "description": "The size, shape, or appearance of the cytoskeleton.",
+        "upstream": "APO:0000226",
+        "downstream": [
+            "APO:0000120",
+            "APO:0000213"
+        ],
+        "qualifiers": [
+            "APO:0000002",
+            "APO:0000250"
+        ]
+    },
+    {
+        "ontologyId": "APO:0000055",
+        "name": "mitochondrial morphology",
+        "description": "The size, shape, or appearance of the mitochondria.",
+        "upstream": "APO:0000226",
+        "downstream": [
+
+        ],
+        "qualifiers": [
+            "APO:0000002",
+            "APO:0000117"
+        ]
+    },
+    {
+        "ontologyId": "APO:0000242",
+        "name": "lipid particle morphology",
+        "description": "The size, shape, or appearance of lipid particles or droplets, subcellular structures consisting of a hydrophobic core of neutral lipids (triacylglycerol and steryl esters), surrounded by a phospholipid monolayer with a small quantity of embedded proteins including enzymes involved in lipid biosynthesis. Lipid particles function as a storage compartment for lipid components.",
+        "upstream": "APO:0000226",
+        "downstream": [
+
+        ],
+        "qualifiers": [
+            "APO:0000002"
+        ]
+    },
+    {
+        "ontologyId": "APO:0000315",
+        "name": "plasma membrane morphology",
+        "description": "The size, shape, or appearance of the plasma membrane.",
+        "upstream": "APO:0000226",
+        "downstream": [
+
+        ],
+        "qualifiers": [
+            "APO:0000002"
+        ]
+    },
+    {
+        "ontologyId": "APO:0000226",
+        "name": "subcellular morphology",
+        "description": "The size, shape, or appearance of subcellular organelles or structures.",
+        "upstream": "APO:0000050",
+        "downstream": [
+            "APO:0000303",
+            "APO:0000053",
+            "APO:0000054",
+            "APO:0000055",
+            "APO:0000242",
+            "APO:0000315"
+        ],
+        "qualifiers": [
+            "APO:0000002"
+        ]
+    },
+    {
+        "ontologyId": "APO:0000050",
+        "name": "cellular morphology",
+        "description": "The size or shape of cells.",
+        "upstream": "APO:0000049",
+        "downstream": [
+            "APO:0000051",
+            "APO:0000052",
+            "APO:0000056",
+            "APO:0000212",
+            "APO:0000223",
+            "APO:0000226"
+        ],
+        "qualifiers": [
+            "APO:0000002",
+            "APO:0000117"
+        ]
+    },
+    {
+        "ontologyId": "APO:0000159",
+        "name": "biofilm formation",
+        "description": "The ability to form a layer on solid surfaces with or without other microorganisms.",
+        "upstream": "APO:0000158",
+        "downstream": [
+
+        ],
+        "qualifiers": [
+            "APO:0000004",
+            "APO:0000003",
+            "APO:0000005",
+            "APO:0000002"
+        ]
+    },
+    {
+        "ontologyId": "APO:0000065",
+        "name": "flocculation",
+        "description": "Adhesion and aggregation of cells in liquid culture to produce clumps of cells.",
+        "upstream": "APO:0000064",
+        "downstream": [
+
+        ],
+        "qualifiers": [
+            "APO:0000005",
+            "APO:0000004",
+            "APO:0000117",
+            "APO:0000002",
+            "APO:0000003"
+        ]
+    },
+    {
+        "ontologyId": "APO:0000064",
+        "name": "liquid culture appearance",
+        "description": "The appearance of a liquid culture of cells.",
+        "upstream": "APO:0000158",
+        "downstream": [
+            "APO:0000065"
+        ],
+        "qualifiers": [
+            "APO:0000002",
+            "APO:0000117"
+        ]
+    },
+    {
+        "ontologyId": "APO:0000061",
+        "name": "colony color",
+        "description": "The color of colonies of cells growing on a solid substrate.",
+        "upstream": "APO:0000060",
+        "downstream": [
+
+        ],
+        "qualifiers": [
+            "APO:0000002",
+            "APO:0000005"
+        ]
+    },
+    {
+        "ontologyId": "APO:0000062",
+        "name": "colony shape",
+        "description": "The shape of colonies of cells growing on a solid substrate.",
+        "upstream": "APO:0000060",
+        "downstream": [
+
+        ],
+        "qualifiers": [
+            "APO:0000117",
+            "APO:0000002"
+        ]
+    },
+    {
+        "ontologyId": "APO:0000063",
+        "name": "colony size",
+        "description": "The size of colonies of cells growing on a solid substrate.",
+        "upstream": "APO:0000060",
+        "downstream": [
+
+        ],
+        "qualifiers": [
+            "APO:0000003",
+            "APO:0000002",
+            "APO:0000245"
+        ]
+    },
+    {
+        "ontologyId": "APO:0000197",
+        "name": "colony sectoring",
+        "description": "Formation of wedge-shaped sectors, with a different color or appearance, in colonies of cells growing on a solid substrate.",
+        "upstream": "APO:0000060",
+        "downstream": [
+
+        ],
+        "qualifiers": [
+            "APO:0000117",
+            "APO:0000004",
+            "APO:0000003"
+        ]
+    },
+    {
+        "ontologyId": "APO:0000060",
+        "name": "colony appearance",
+        "description": "The appearance of colonies of cells growing on a solid substrate.",
+        "upstream": "APO:0000158",
+        "downstream": [
+            "APO:0000061",
+            "APO:0000062",
+            "APO:0000063",
+            "APO:0000197"
+        ],
+        "qualifiers": [
+            "APO:0000002",
+            "APO:0000117"
+        ]
+    },
+    {
+        "ontologyId": "APO:0000158",
+        "name": "culture appearance",
+        "description": "The appearance of a population of cells.",
+        "upstream": "APO:0000049",
+        "downstream": [
+            "APO:0000159",
+            "APO:0000064",
+            "APO:0000060"
+        ],
+        "qualifiers": [
+            "APO:0000002"
+        ]
+    },
+    {
+        "ontologyId": "APO:0000049",
+        "name": "morphology",
+        "description": "The size or shape of subcellular structures, cells, or multicellular structures.",
+        "upstream": "phenotype",
+        "downstream": [
+            "APO:0000050",
+            "APO:0000158"
+        ],
+        "qualifiers": [
+
+        ]
+    },
+    {
+        "ontologyId": "APO:0000196",
+        "name": "mating type switching",
+        "description": "Conversion of a cell of one mating type to a different mating type.",
+        "upstream": "APO:0000031",
+        "downstream": [
+
+        ],
+        "qualifiers": [
+            "APO:0000004",
+            "APO:0000003",
+            "APO:0000002",
+            "APO:0000005",
+            "APO:0000117"
+        ]
+    },
+    {
+        "ontologyId": "APO:0000033",
+        "name": "cell fusion",
+        "description": "The fusion of individual cells from each partner during mating.",
+        "upstream": "APO:0000032",
+        "downstream": [
+
+        ],
+        "qualifiers": [
+            "APO:0000005",
+            "APO:0000003",
+            "APO:0000002"
+        ]
+    },
+    {
+        "ontologyId": "APO:0000034",
+        "name": "mating efficiency",
+        "description": "The proportion of cells within a population that are able to mate.",
+        "upstream": "APO:0000032",
+        "downstream": [
+
+        ],
+        "qualifiers": [
+            "APO:0000117",
+            "APO:0000004",
+            "APO:0000003",
+            "APO:0000005"
+        ]
+    },
+    {
+        "ontologyId": "APO:0000035",
+        "name": "nuclear fusion during mating",
+        "description": "The fusion of the nuclei of two mating cells.",
+        "upstream": "APO:0000032",
+        "downstream": [
+
+        ],
+        "qualifiers": [
+            "APO:0000003",
+            "APO:0000005",
+            "APO:0000002",
+            "APO:0000249"
+        ]
+    },
+    {
+        "ontologyId": "APO:0000036",
+        "name": "pheromone production",
+        "description": "The production of mating pheromones.",
+        "upstream": "APO:0000032",
+        "downstream": [
+
+        ],
+        "qualifiers": [
+            "APO:0000003",
+            "APO:0000004",
+            "APO:0000002",
+            "APO:0000005",
+            "APO:0000117"
+        ]
+    },
+    {
+        "ontologyId": "APO:0000123",
+        "name": "recovery from pheromone-induced cell cycle arrest",
+        "description": "Resumption of the cell cycle after the arrest that occurs in response to the presence of mating pheromones from cells of the opposite mating type.",
+        "upstream": "APO:0000037",
+        "downstream": [
+
+        ],
+        "qualifiers": [
+            "APO:0000246",
+            "APO:0000004",
+            "APO:0000005",
+            "APO:0000003",
+            "APO:0000117",
+            "APO:0000249"
+        ]
+    },
+    {
+        "ontologyId": "APO:0000124",
+        "name": "pheromone-induced cell cycle arrest",
+        "description": "Arrest of the cell cycle that occurs in response to the presence of mating pheromones from cells of the opposite mating type.",
+        "upstream": "APO:0000037",
+        "downstream": [
+
+        ],
+        "qualifiers": [
+            "APO:0000002",
+            "APO:0000005",
+            "APO:0000003",
+            "APO:0000117"
+        ]
+    },
+    {
+        "ontologyId": "APO:0000037",
+        "name": "pheromone sensitivity",
+        "description": "Sensitivity to mating pheromones produced by cells of the opposite mating type.",
+        "upstream": "APO:0000032",
+        "downstream": [
+            "APO:0000123",
+            "APO:0000124"
+        ],
+        "qualifiers": [
+            "APO:0000004",
+            "APO:0000003",
+            "APO:0000002",
+            "APO:0000005",
+            "APO:0000117"
+        ]
+    },
+    {
+        "ontologyId": "APO:0000038",
+        "name": "shmoo formation",
+        "description": "An alteration of morphology such that the cell has a mating projection, formed in response to mating pheromone by cells of Saccharomyces and other fungi with similar life cycles. Named after the Al Capp cartoon character, whose shape it resembles.",
+        "upstream": "APO:0000032",
+        "downstream": [
+
+        ],
+        "qualifiers": [
+            "APO:0000002",
+            "APO:0000005",
+            "APO:0000003",
+            "APO:0000245",
+            "APO:0000246",
+            "APO:0000117"
+        ]
+    },
+    {
+        "ontologyId": "APO:0000032",
+        "name": "mating response",
+        "description": "The interaction between organisms leading to mating.",
+        "upstream": "APO:0000031",
+        "downstream": [
+            "APO:0000033",
+            "APO:0000034",
+            "APO:0000035",
+            "APO:0000036",
+            "APO:0000037",
+            "APO:0000038"
+        ],
+        "qualifiers": [
+            "APO:0000002",
+            "APO:0000004",
+            "APO:0000003",
+            "APO:0000005",
+            "APO:0000117"
+        ]
+    },
+    {
+        "ontologyId": "APO:0000040",
+        "name": "meiotic recombination",
+        "description": "The exchange of genetic material between non-sister chromatids in a pair of homologous chromosomes during meiosis.",
+        "upstream": "APO:0000039",
+        "downstream": [
+
+        ],
+        "qualifiers": [
+            "APO:0000003",
+            "APO:0000002",
+            "APO:0000117",
+            "APO:0000004",
+            "APO:0000249",
+            "APO:0000005"
+        ]
+    },
+    {
+        "ontologyId": "APO:0000039",
+        "name": "meiosis",
+        "description": "A specialized cell division in which a single diploid cell undergoes two nuclear divisions following a single round of DNA replication in order to produce four daughter cells that contain half the number of chromosomes as the diploid cell.",
+        "upstream": "APO:0000031",
+        "downstream": [
+            "APO:0000040"
+        ],
+        "qualifiers": [
+            "APO:0000251",
+            "APO:0000005",
+            "APO:0000003",
+            "APO:0000249",
+            "APO:0000002",
+            "APO:0000250",
+            "APO:0000117"
+        ]
+    },
+    {
+        "ontologyId": "APO:0000044",
+        "name": "sporulation efficiency",
+        "description": "The percentage of diploid cells in a population that undergo meiosis and form spores under sporulation-inducing conditions.",
+        "upstream": "APO:0000041",
+        "downstream": [
+
+        ],
+        "qualifiers": [
+            "APO:0000117",
+            "APO:0000003",
+            "APO:0000004",
+            "APO:0000002",
+            "APO:0000005"
+        ]
+    },
+    {
+        "ontologyId": "APO:0000042",
+        "name": "spore germination",
+        "description": "The production of viable cells arising from sexual spores.",
+        "upstream": "APO:0000041",
+        "downstream": [
+
+        ],
+        "qualifiers": [
+            "APO:0000005",
+            "APO:0000003",
+            "APO:0000002",
+            "APO:0000245",
+            "APO:0000117"
+        ]
+    },
+    {
+        "ontologyId": "APO:0000043",
+        "name": "spore wall formation",
+        "description": "The biogenesis of specialized cell walls around developing ascospores.",
+        "upstream": "APO:0000041",
+        "downstream": [
+
+        ],
+        "qualifiers": [
+            "APO:0000005",
+            "APO:0000002",
+            "APO:0000249"
+        ]
+    },
+    {
+        "ontologyId": "APO:0000041",
+        "name": "sporulation",
+        "description": "The formation of ascospores, which are the products of meiosis.",
+        "upstream": "APO:0000031",
+        "downstream": [
+            "APO:0000044",
+            "APO:0000042",
+            "APO:0000043"
+        ],
+        "qualifiers": [
+            "APO:0000005",
+            "APO:0000003",
+            "APO:0000246",
+            "APO:0000004",
+            "APO:0000117",
+            "APO:0000002",
+            "APO:0000249"
+        ]
+    },
+    {
+        "ontologyId": "APO:0000045",
+        "name": "sterile",
+        "description": "The sterile phenotype is the inability to mate with cells of the opposite mating type under conditions that normally promote mating.",
+        "upstream": "APO:0000031",
+        "downstream": [
+
+        ],
+        "qualifiers": [
+
+        ]
+    },
+    {
+        "ontologyId": "APO:0000031",
+        "name": "sexual cycle",
+        "description": "The process of sexual reproduction.",
+        "upstream": "APO:0000023",
+        "downstream": [
+            "APO:0000196",
+            "APO:0000032",
+            "APO:0000039",
+            "APO:0000041",
+            "APO:0000045"
+        ],
+        "qualifiers": [
+
+        ]
+    },
+    {
+        "ontologyId": "APO:0000025",
+        "name": "axial budding pattern",
+        "description": "Localization of the newly emerging bud near the site of the previous bud.",
+        "upstream": "APO:0000200",
+        "downstream": [
+
+        ],
+        "qualifiers": [
+            "APO:0000117",
+            "APO:0000003",
+            "APO:0000245",
+            "APO:0000002"
+        ]
+    },
+    {
+        "ontologyId": "APO:0000026",
+        "name": "bipolar budding pattern",
+        "description": "Localization of the emerging bud at the cell pole opposite the previous bud site.",
+        "upstream": "APO:0000200",
+        "downstream": [
+
+        ],
+        "qualifiers": [
+            "APO:0000004",
+            "APO:0000005",
+            "APO:0000003",
+            "APO:0000245",
+            "APO:0000002"
+        ]
+    },
+    {
+        "ontologyId": "APO:0000200",
+        "name": "budding pattern",
+        "description": "The pattern with which buds emerge from a mother cell.",
+        "upstream": "APO:0000024",
+        "downstream": [
+            "APO:0000025",
+            "APO:0000026"
+        ],
+        "qualifiers": [
+            "APO:0000002"
+        ]
+    },
+    {
+        "ontologyId": "APO:0000089",
+        "name": "budding index",
+        "description": "The percentage or fraction of budded cells in a population.",
+        "upstream": "APO:0000024",
+        "downstream": [
+
+        ],
+        "qualifiers": [
+            "APO:0000004",
+            "APO:0000003",
+            "APO:0000002",
+            "APO:0000117"
+        ]
+    },
+    {
+        "ontologyId": "APO:0000024",
+        "name": "budding",
+        "description": "The formation of a bud, which develops into a daughter cell during asexual reproduction.",
+        "upstream": "APO:0000023",
+        "downstream": [
+            "APO:0000200",
+            "APO:0000089"
+        ],
+        "qualifiers": [
+            "APO:0000003",
+            "APO:0000249",
+            "APO:0000005",
+            "APO:0000002",
+            "APO:0000117",
+            "APO:0000245",
+            "APO:0000004"
+        ]
+    },
+    {
+        "ontologyId": "APO:0000028",
+        "name": "invasive growth",
+        "description": "Penetration of cells into a solid substrate during filamentous growth.",
+        "upstream": "APO:0000027",
+        "downstream": [
+
+        ],
+        "qualifiers": [
+            "APO:0000005",
+            "APO:0000004",
+            "APO:0000003"
+        ]
+    },
+    {
+        "ontologyId": "APO:0000029",
+        "name": "pseudohyphal growth",
+        "description": "Growth in a pattern that occurs in conditions of nitrogen limitation and abundant fermentable carbon source. Cells become elongated, switch to a unipolar budding pattern, remain physically attached to each other, and invade the growth substrate.",
+        "upstream": "APO:0000027",
+        "downstream": [
+
+        ],
+        "qualifiers": [
+            "APO:0000004",
+            "APO:0000002",
+            "APO:0000003",
+            "APO:0000117",
+            "APO:0000005"
+        ]
+    },
+    {
+        "ontologyId": "APO:0000027",
+        "name": "filamentous growth",
+        "description": "Growth in a threadlike, filamentous shape.",
+        "upstream": "APO:0000023",
+        "downstream": [
+            "APO:0000028",
+            "APO:0000029"
+        ],
+        "qualifiers": [
+            "APO:0000003",
+            "APO:0000004",
+            "APO:0000117",
+            "APO:0000005",
+            "APO:0000002"
+        ]
+    },
+    {
+        "ontologyId": "APO:0000316",
+        "name": "chronological lifespan",
+        "description": "The number of days that a culture remains viable in stationary phase.",
+        "upstream": "APO:0000030",
+        "downstream": [
+
+        ],
+        "qualifiers": [
+            "APO:0000002",
+            "APO:0000004",
+            "APO:0000003",
+            "APO:0000117"
+        ]
+    },
+    {
+        "ontologyId": "APO:0000317",
+        "name": "replicative lifespan",
+        "description": "The number of divisions that a cell undergoes before dying.",
+        "upstream": "APO:0000030",
+        "downstream": [
+
+        ],
+        "qualifiers": [
+            "APO:0000004",
+            "APO:0000003",
+            "APO:0000117",
+            "APO:0000002"
+        ]
+    },
+    {
+        "ontologyId": "APO:0000030",
+        "name": "lifespan",
+        "description": "The duration of the life of an individual organism.",
+        "upstream": "APO:0000023",
+        "downstream": [
+            "APO:0000316",
+            "APO:0000317"
+        ],
+        "qualifiers": [
+            "APO:0000002",
+            "APO:0000003",
+            "APO:0000004"
+        ]
+    },
+    {
+        "ontologyId": "APO:0000023",
+        "name": "development",
+        "description": "Developmental processes.",
+        "upstream": "phenotype",
+        "downstream": [
+            "APO:0000031",
+            "APO:0000024",
+            "APO:0000027",
+            "APO:0000030"
+        ],
+        "qualifiers": [
+
+        ]
+    },
+    {
+        "ontologyId": "APO:0000266",
+        "name": "cell cycle progression in S phase",
+        "description": "Progression of cells through S phase, the part of the mitotic cell cycle where DNA synthesis occurs.",
+        "upstream": "APO:0000253",
+        "downstream": [
+
+        ],
+        "qualifiers": [
+            "APO:0000249",
+            "APO:0000246",
+            "APO:0000250",
+            "APO:0000248",
+            "APO:0000002",
+            "APO:0000245",
+            "APO:0000003",
+            "APO:0000247"
+        ]
+    },
+    {
+        "ontologyId": "APO:0000254",
+        "name": "cell cycle progression in G2 phase",
+        "description": "Progression of cells through the G2 phase or second gap phase of the mitotic cell cycle, the interval between the completion of DNA synthesis and the beginning of mitosis.",
+        "upstream": "APO:0000253",
+        "downstream": [
+
+        ],
+        "qualifiers": [
+            "APO:0000249",
+            "APO:0000248",
+            "APO:0000002",
+            "APO:0000250",
+            "APO:0000245",
+            "APO:0000247",
+            "APO:0000004"
+        ]
+    },
+    {
+        "ontologyId": "APO:0000256",
+        "name": "cell cycle passage through START",
+        "description": "Passage of cells through cell cycle control point or checkpoint located late in the G1 phase of the mitotic cell cycle just prior to S phase entry; passage through START results in commits cells to progression through the entire cell cycle.",
+        "upstream": "APO:0000255",
+        "downstream": [
+
+        ],
+        "qualifiers": [
+            "APO:0000250",
+            "APO:0000117",
+            "APO:0000246",
+            "APO:0000249"
+        ]
+    },
+    {
+        "ontologyId": "APO:0000255",
+        "name": "cell cycle progression in G1 phase",
+        "description": "Progression of cells through the G1 or first gap phase of the mitotic cell cycle, the interval between the completion of mitosis and the beginning of DNA synthesis.",
+        "upstream": "APO:0000253",
+        "downstream": [
+            "APO:0000256"
+        ],
+        "qualifiers": [
+            "APO:0000250",
+            "APO:0000248",
+            "APO:0000002",
+            "APO:0000247",
+            "APO:0000249",
+            "APO:0000004",
+            "APO:0000117",
+            "APO:0000246"
+        ]
+    },
+    {
+        "ontologyId": "APO:0000257",
+        "name": "cell cycle progression through the G2/M phase transition",
+        "description": "Progression of cells from G2 phase to M phase of the mitotic cell cycle.",
+        "upstream": "APO:0000253",
+        "downstream": [
+
+        ],
+        "qualifiers": [
+            "APO:0000002",
+            "APO:0000250",
+            "APO:0000249",
+            "APO:0000248",
+            "APO:0000246",
+            "APO:0000252",
+            "APO:0000004",
+            "APO:0000117",
+            "APO:0000003",
+            "APO:0000251"
+        ]
+    },
+    {
+        "ontologyId": "APO:0000264",
+        "name": "cell cycle progression in metaphase",
+        "description": "Progression of cells through metaphase during M phase of the mitotic cell cycle.",
+        "upstream": "APO:0000258",
+        "downstream": [
+
+        ],
+        "qualifiers": [
+            "APO:0000247",
+            "APO:0000248",
+            "APO:0000249",
+            "APO:0000250",
+            "APO:0000251"
+        ]
+    },
+    {
+        "ontologyId": "APO:0000265",
+        "name": "cell cycle progression in telophase",
+        "description": "Progression of cells through telophase, the last of the stages of mitosis during M phase of the mitotic cell cycle.",
+        "upstream": "APO:0000258",
+        "downstream": [
+
+        ],
+        "qualifiers": [
+            "APO:0000250",
+            "APO:0000249",
+            "APO:0000251"
+        ]
+    },
+    {
+        "ontologyId": "APO:0000259",
+        "name": "cell cycle passage through the metaphase-anaphase transition",
+        "description": "Progression of cells from metaphase to anaphase during M phase of the mitotic cell cycle.",
+        "upstream": "APO:0000258",
+        "downstream": [
+
+        ],
+        "qualifiers": [
+            "APO:0000251",
+            "APO:0000249",
+            "APO:0000250"
+        ]
+    },
+    {
+        "ontologyId": "APO:0000263",
+        "name": "cell cycle progression in late anaphase",
+        "description": "Progression of cells through late anaphase during M phase of the mitotic cell cycle.",
+        "upstream": "APO:0000260",
+        "downstream": [
+
+        ],
+        "qualifiers": [
+            "APO:0000250"
+        ]
+    },
+    {
+        "ontologyId": "APO:0000261",
+        "name": "cell cycle progression in early anaphase",
+        "description": "Progression of cells through early anaphase during M phase of the mitotic cell cycle.",
+        "upstream": "APO:0000260",
+        "downstream": [
+
+        ],
+        "qualifiers": [
+
+        ]
+    },
+    {
+        "ontologyId": "APO:0000262",
+        "name": "cell cycle progression in mid anaphase",
+        "description": "Progression of cells through mid anaphase during M phase of the mitotic cell cycle.",
+        "upstream": "APO:0000260",
+        "downstream": [
+
+        ],
+        "qualifiers": [
+            "APO:0000249"
+        ]
+    },
+    {
+        "ontologyId": "APO:0000260",
+        "name": "cell cycle progression in anaphase",
+        "description": "Progression of cells through anaphase during M phase of the mitotic cell cycle.",
+        "upstream": "APO:0000258",
+        "downstream": [
+            "APO:0000263",
+            "APO:0000261",
+            "APO:0000262"
+        ],
+        "qualifiers": [
+            "APO:0000247",
+            "APO:0000002",
+            "APO:0000249",
+            "APO:0000248",
+            "APO:0000005",
+            "APO:0000251",
+            "APO:0000250"
+        ]
+    },
+    {
+        "ontologyId": "APO:0000258",
+        "name": "cell cycle progression in M phase",
+        "description": "Progression of cells through the M phase of the mitotic cell cycle, the phase in which mitosis occurs.",
+        "upstream": "APO:0000253",
+        "downstream": [
+            "APO:0000264",
+            "APO:0000265",
+            "APO:0000259",
+            "APO:0000260"
+        ],
+        "qualifiers": [
+            "APO:0000250",
+            "APO:0000249",
+            "APO:0000002",
+            "APO:0000003",
+            "APO:0000248",
+            "APO:0000246"
+        ]
+    },
+    {
+        "ontologyId": "APO:0000269",
+        "name": "cell cycle progression through the G1/S phase transition",
+        "description": "Progression of cells from G1 phase to S phase of the mitotic cell cycle.",
+        "upstream": "APO:0000253",
+        "downstream": [
+
+        ],
+        "qualifiers": [
+            "APO:0000246",
+            "APO:0000249",
+            "APO:0000250",
+            "APO:0000005",
+            "APO:0000002",
+            "APO:0000251",
+            "APO:0000003",
+            "APO:0000248"
+        ]
+    },
+    {
+        "ontologyId": "APO:0000253",
+        "name": "cell cycle progression",
+        "description": "Progression of cells through the mitotic cell cycle.",
+        "upstream": "APO:0000072",
+        "downstream": [
+            "APO:0000266",
+            "APO:0000254",
+            "APO:0000255",
+            "APO:0000257",
+            "APO:0000258",
+            "APO:0000269"
+        ],
+        "qualifiers": [
+            "APO:0000248",
+            "APO:0000002",
+            "APO:0000250",
+            "APO:0000117",
+            "APO:0000249",
+            "APO:0000245",
+            "APO:0000246",
+            "APO:0000003",
+            "APO:0000005"
+        ]
+    },
+    {
+        "ontologyId": "APO:0000267",
+        "name": "entry into G0 (stationary phase)",
+        "description": "Entry of cells into the G0 or stationary phase of the mitotic cell cycle, where they enter a quiescent state.",
+        "upstream": "APO:0000072",
+        "downstream": [
+
+        ],
+        "qualifiers": [
+            "APO:0000245",
+            "APO:0000005",
+            "APO:0000002",
+            "APO:0000003",
+            "APO:0000004",
+            "APO:0000246"
+        ]
+    },
+    {
+        "ontologyId": "APO:0000071",
+        "name": "cytokinesis",
+        "description": "The division of the cytoplasm and the plasma membrane of a cell and its separation into two daughter cells.",
+        "upstream": "APO:0000072",
+        "downstream": [
+
+        ],
+        "qualifiers": [
+            "APO:0000003",
+            "APO:0000005",
+            "APO:0000002",
+            "APO:0000249",
+            "APO:0000245"
+        ]
+    },
+    {
+        "ontologyId": "APO:0000268",
+        "name": "exit from G0 (stationary phase)",
+        "description": "Exit of cells from the G0 or stationary phase of the mitotic cell cycle, where they move from a quiescent state to one where growth and division resumes in the G1 phase of the mitotic cell cycle.",
+        "upstream": "APO:0000072",
+        "downstream": [
+
+        ],
+        "qualifiers": [
+            "APO:0000249"
+        ]
+    },
+    {
+        "ontologyId": "APO:0000072",
+        "name": "mitotic cell cycle",
+        "description": "A cycle of DNA replication and cell division via mitosis.",
+        "upstream": "APO:0000066",
+        "downstream": [
+            "APO:0000253",
+            "APO:0000267",
+            "APO:0000071",
+            "APO:0000268"
+        ],
+        "qualifiers": [
+            "APO:0000002",
+            "APO:0000250",
+            "APO:0000249"
+        ]
+    },
+    {
+        "ontologyId": "APO:0000340",
+        "name": "reticulophagy",
+        "description": "A form of macroautophagy selective for the endoplasmic reticulum that occurs in response to starvation, ER stress, aggregate accumulation or during a shift in environmental conditions.",
+        "upstream": "APO:0000074",
+        "downstream": [
+
+        ],
+        "qualifiers": [
+            "APO:0000003",
+            "APO:0000005"
+        ]
+    },
+    {
+        "ontologyId": "APO:0000239",
+        "name": "pexophagy",
+        "description": "A form of autophagy selective for peroxisomes that occurs in response to starvation, damage or as a homeostatic mechanism to regulate the levels of this organelle. Pexophagy can be further subdivided into micropexophagy, the engulfment of a cluster of peroxisomes at the vacuole surface and macropexophagy, the sequestration of individual peroxisomes by a double-membrane vesicle, followed by fusion with the vacuole.",
+        "upstream": "APO:0000074",
+        "downstream": [
+
+        ],
+        "qualifiers": [
+            "APO:0000249",
+            "APO:0000005",
+            "APO:0000117",
+            "APO:0000003",
+            "APO:0000245",
+            "APO:0000004"
+        ]
+    },
+    {
+        "ontologyId": "APO:0000240",
+        "name": "mitophagy",
+        "description": "A form of autophagy selective for mitochondria that occurs in response to starvation, damage or during a shift in environmental conditions. The process can be further subdivided into micromitophagy, the engulfment of a cluster of mitochondria at the vacuole surface, and macromitophagy, the sequestration of individual mitochondria by a double-membrane vesicle, followed by fusion with the vacuole.",
+        "upstream": "APO:0000074",
+        "downstream": [
+
+        ],
+        "qualifiers": [
+            "APO:0000249",
+            "APO:0000005",
+            "APO:0000003",
+            "APO:0000004",
+            "APO:0000117",
+            "APO:0000002"
+        ]
+    },
+    {
+        "ontologyId": "APO:0000339",
+        "name": "ribophagy",
+        "description": "A form of macroautophagy selective for ribosomes that occurs in response to starvation, damage or during a shift in environmental conditions.",
+        "upstream": "APO:0000074",
+        "downstream": [
+
+        ],
+        "qualifiers": [
+            "APO:0000003"
+        ]
+    },
+    {
+        "ontologyId": "APO:0000338",
+        "name": "micronucleophagy",
+        "description": "A form of microautophagy selective for the nucleus that occurs in response to starvation, damage or during a shift in environmental conditions.",
+        "upstream": "APO:0000074",
+        "downstream": [
+
+        ],
+        "qualifiers": [
+            "APO:0000005"
+        ]
+    },
+    {
+        "ontologyId": "APO:0000341",
+        "name": "nucleophagy",
+        "description": "Selective degradation of nucleoplasm that occurs upon nitrogen starvation, in which parts of the nucleus and perinuclear ER are packaged into autophagosomes and delivered to the vacuole for degradation. In S. cerevisiae, Atg39p is involved in this process.",
+        "upstream": "APO:0000074",
+        "downstream": [
+
+        ],
+        "qualifiers": [
+            "APO:0000003",
+            "APO:0000002"
+        ]
+    },
+    {
+        "ontologyId": "APO:0000342",
+        "name": "late nucleophagy",
+        "description": "The autophagic degradation of bulk nucleoplasm that occurs after prolonged nitrogen starvation. In late nucleophagy, delivery of the nuclear cargo to the vacuole does not involve autophagosomes.",
+        "upstream": "APO:0000074",
+        "downstream": [
+
+        ],
+        "qualifiers": [
+            "APO:0000005"
+        ]
+    },
+    {
+        "ontologyId": "APO:0000074",
+        "name": "autophagy",
+        "description": "The delivery and degradation of autophagy markers to the vacuole via the autophagic pathway.",
+        "upstream": "APO:0000073",
+        "downstream": [
+            "APO:0000340",
+            "APO:0000239",
+            "APO:0000240",
+            "APO:0000339",
+            "APO:0000338",
+            "APO:0000341",
+            "APO:0000342"
+        ],
+        "qualifiers": [
+            "APO:0000004",
+            "APO:0000002",
+            "APO:0000117",
+            "APO:0000005",
+            "APO:0000249",
+            "APO:0000003",
+            "APO:0000245",
+            "APO:0000248",
+            "APO:0000247"
+        ]
+    },
+    {
+        "ontologyId": "APO:0000075",
+        "name": "endocytosis",
+        "description": "The uptake and delivery of external materials or membrane constituents by the invagination of a small region of the plasma membrane to form a new membrane-bounded vesicle.",
+        "upstream": "APO:0000073",
+        "downstream": [
+
+        ],
+        "qualifiers": [
+            "APO:0000002",
+            "APO:0000249",
+            "APO:0000003",
+            "APO:0000004",
+            "APO:0000005",
+            "APO:0000117",
+            "APO:0000251",
+            "APO:0000245"
+        ]
+    },
+    {
+        "ontologyId": "APO:0000076",
+        "name": "mitochondrial transport",
+        "description": "Import of proteins into mitochondria.",
+        "upstream": "APO:0000129",
+        "downstream": [
+
+        ],
+        "qualifiers": [
+            "APO:0000003",
+            "APO:0000117",
+            "APO:0000245",
+            "APO:0000002"
+        ]
+    },
+    {
+        "ontologyId": "APO:0000127",
+        "name": "nuclear export",
+        "description": "Export of proteins or RNAs from the nucleus.",
+        "upstream": "APO:0000077",
+        "downstream": [
+
+        ],
+        "qualifiers": [
+            "APO:0000249",
+            "APO:0000003",
+            "APO:0000002",
+            "APO:0000117",
+            "APO:0000005"
+        ]
+    },
+    {
+        "ontologyId": "APO:0000126",
+        "name": "nuclear import",
+        "description": "Transport of proteins or RNAs into or out of the nucleus.",
+        "upstream": "APO:0000077",
+        "downstream": [
+
+        ],
+        "qualifiers": [
+            "APO:0000004",
+            "APO:0000003",
+            "APO:0000117",
+            "APO:0000005",
+            "APO:0000002",
+            "APO:0000245"
+        ]
+    },
+    {
+        "ontologyId": "APO:0000077",
+        "name": "nuclear transport",
+        "description": "Transport of proteins or RNAs into or out of the nucleus.",
+        "upstream": "APO:0000129",
+        "downstream": [
+            "APO:0000127",
+            "APO:0000126"
+        ],
+        "qualifiers": [
+            "APO:0000002"
+        ]
+    },
+    {
+        "ontologyId": "APO:0000078",
+        "name": "protein secretion",
+        "description": "Transport of proteins out of the cell by fusion of a membrane-bounded vesicle containing the proteins by fusion of the vesicle with the plasma membrane.",
+        "upstream": "APO:0000129",
+        "downstream": [
+
+        ],
+        "qualifiers": [
+            "APO:0000249",
+            "APO:0000002",
+            "APO:0000003",
+            "APO:0000005",
+            "APO:0000004"
+        ]
+    },
+    {
+        "ontologyId": "APO:0000079",
+        "name": "vacuolar transport",
+        "description": "Transport of proteins into the vacuole.",
+        "upstream": "APO:0000129",
+        "downstream": [
+
+        ],
+        "qualifiers": [
+            "APO:0000003",
+            "APO:0000002",
+            "APO:0000117",
+            "APO:0000249",
+            "APO:0000245",
+            "APO:0000004",
+            "APO:0000005"
+        ]
+    },
+    {
+        "ontologyId": "APO:0000128",
+        "name": "peroxisomal transport",
+        "description": "Import of proteins into peroxisomes.",
+        "upstream": "APO:0000129",
+        "downstream": [
+
+        ],
+        "qualifiers": [
+            "APO:0000003",
+            "APO:0000005"
+        ]
+    },
+    {
+        "ontologyId": "APO:0000129",
+        "name": "protein transport",
+        "description": "Delivery of proteins to specific locations.",
+        "upstream": "APO:0000073",
+        "downstream": [
+            "APO:0000076",
+            "APO:0000077",
+            "APO:0000078",
+            "APO:0000079",
+            "APO:0000128"
+        ],
+        "qualifiers": [
+            "APO:0000002",
+            "APO:0000246",
+            "APO:0000003",
+            "APO:0000249",
+            "APO:0000005",
+            "APO:0000004"
+        ]
+    },
+    {
+        "ontologyId": "APO:0000130",
+        "name": "small molecule transport",
+        "description": "Transport of small molecules into, out of, or within the cell.",
+        "upstream": "APO:0000073",
+        "downstream": [
+
+        ],
+        "qualifiers": [
+            "APO:0000003",
+            "APO:0000004",
+            "APO:0000005",
+            "APO:0000246",
+            "APO:0000245",
+            "APO:0000117",
+            "APO:0000002"
+        ]
+    },
+    {
+        "ontologyId": "APO:0000132",
+        "name": "RNA localization",
+        "description": "Localization of specific RNAs within the cell.",
+        "upstream": "APO:0000073",
+        "downstream": [
+
+        ],
+        "qualifiers": [
+            "APO:0000002",
+            "APO:0000003"
+        ]
+    },
+    {
+        "ontologyId": "APO:0000302",
+        "name": "vesicle distribution",
+        "description": "The localization and placement of secretory, endocytic, or undefined vesicles within a cell or between separating cells.",
+        "upstream": "APO:0000296",
+        "downstream": [
+
+        ],
+        "qualifiers": [
+            "APO:0000002"
+        ]
+    },
+    {
+        "ontologyId": "APO:0000298",
+        "name": "peroxisomal distribution",
+        "description": "The localization and placement of peroxisomes within a cell or between separating cells.",
+        "upstream": "APO:0000296",
+        "downstream": [
+
+        ],
+        "qualifiers": [
+            "APO:0000002"
+        ]
+    },
+    {
+        "ontologyId": "APO:0000297",
+        "name": "mitochondrial distribution",
+        "description": "The localization and placement of mitochondria within a cell or between separating cells.",
+        "upstream": "APO:0000296",
+        "downstream": [
+
+        ],
+        "qualifiers": [
+            "APO:0000002"
+        ]
+    },
+    {
+        "ontologyId": "APO:0000299",
+        "name": "vacuolar distribution",
+        "description": "The localization and placement of vacuoles within a cell or between separating cells.",
+        "upstream": "APO:0000296",
+        "downstream": [
+
+        ],
+        "qualifiers": [
+            "APO:0000002",
+            "APO:0000003"
+        ]
+    },
+    {
+        "ontologyId": "APO:0000300",
+        "name": "endoplasmic reticulum distribution",
+        "description": "The localization and placement of endoplasmic reticulum (ER) within a cell or between separating cells.",
+        "upstream": "APO:0000296",
+        "downstream": [
+
+        ],
+        "qualifiers": [
+            "APO:0000002",
+            "APO:0000003"
+        ]
+    },
+    {
+        "ontologyId": "APO:0000301",
+        "name": "Golgi distribution",
+        "description": "The localization and placement of the Golgi apparatus within a cell or between separating cells.",
+        "upstream": "APO:0000296",
+        "downstream": [
+
+        ],
+        "qualifiers": [
+            "APO:0000002",
+            "APO:0000004"
+        ]
+    },
+    {
+        "ontologyId": "APO:0000118",
+        "name": "nuclear position",
+        "description": "The location of the nucleus or nuclei within a cell or between separating cells.",
+        "upstream": "APO:0000296",
+        "downstream": [
+
+        ],
+        "qualifiers": [
+            "APO:0000002"
+        ]
+    },
+    {
+        "ontologyId": "APO:0000296",
+        "name": "organelle distribution",
+        "description": "The localization and placement of a particular organelle.",
+        "upstream": "APO:0000073",
+        "downstream": [
+            "APO:0000302",
+            "APO:0000298",
+            "APO:0000297",
+            "APO:0000299",
+            "APO:0000300",
+            "APO:0000301",
+            "APO:0000118"
+        ],
+        "qualifiers": [
+
+        ]
+    },
+    {
+        "ontologyId": "APO:0000073",
+        "name": "intracellular transport",
+        "description": "Transport of substances within cells.",
+        "upstream": "APO:0000066",
+        "downstream": [
+            "APO:0000074",
+            "APO:0000075",
+            "APO:0000129",
+            "APO:0000130",
+            "APO:0000132",
+            "APO:0000296"
+        ],
+        "qualifiers": [
+            "APO:0000003"
+        ]
+    },
+    {
+        "ontologyId": "APO:0000147",
+        "name": "heat sensitivity",
+        "description": "Sensitivity to temperatures that are higher than optimal growth temperature.",
+        "upstream": "APO:0000092",
+        "downstream": [
+
+        ],
+        "qualifiers": [
+            "APO:0000117",
+            "APO:0000004",
+            "APO:0000003"
+        ]
+    },
+    {
+        "ontologyId": "APO:0000148",
+        "name": "cold sensitivity",
+        "description": "Sensitivity to temperatures that are lower than optimal growth temperature.",
+        "upstream": "APO:0000092",
+        "downstream": [
+
+        ],
+        "qualifiers": [
+            "APO:0000004",
+            "APO:0000003"
+        ]
+    },
+    {
+        "ontologyId": "APO:0000092",
+        "name": "temperature sensitive growth",
+        "description": "Sensitivity to temperatures that are higher or lower than optimal growth temperature.",
+        "upstream": "APO:0000080",
+        "downstream": [
+            "APO:0000147",
+            "APO:0000148"
+        ],
+        "qualifiers": [
+            "APO:0000004",
+            "APO:0000245"
+        ]
+    },
+    {
+        "ontologyId": "APO:0000334",
+        "name": "innate thermotolerance",
+        "description": "The natural or innate ability of a cell to survive a period of exposure to an acute heat shock without pretreatment.",
+        "upstream": "APO:0000093",
+        "downstream": [
+
+        ],
+        "qualifiers": [
+            "APO:0000003",
+            "APO:0000004",
+            "APO:0000005"
+        ]
+    },
+    {
+        "ontologyId": "APO:0000333",
+        "name": "acquired thermotolerance",
+        "description": "The ability to survive a period of exposure to an acute heat shock after brief pretreatment at a mildly elevated temperature.",
+        "upstream": "APO:0000093",
+        "downstream": [
+
+        ],
+        "qualifiers": [
+            "APO:0000117",
+            "APO:0000003",
+            "APO:0000004"
+        ]
+    },
+    {
+        "ontologyId": "APO:0000093",
+        "name": "thermotolerance",
+        "description": "The ability to survive a period of exposure to extremely high temperature (heat shock).",
+        "upstream": "APO:0000080",
+        "downstream": [
+            "APO:0000334",
+            "APO:0000333"
+        ],
+        "qualifiers": [
+            "APO:0000004"
+        ]
+    },
+    {
+        "ontologyId": "APO:0000081",
+        "name": "killer toxin resistance",
+        "description": "The level of resistance to killer toxin, which is encoded on double-stranded RNA viruses carried by some yeast strains.",
+        "upstream": "APO:0000215",
+        "downstream": [
+
+        ],
+        "qualifiers": [
+            "APO:0000003",
+            "APO:0000004",
+            "APO:0000117"
+        ]
+    },
+    {
+        "ontologyId": "APO:0000215",
+        "name": "toxin resistance",
+        "description": "The level of resistance to toxins, poisonous compounds that are produced by cells or organisms.",
+        "upstream": "APO:0000080",
+        "downstream": [
+            "APO:0000081"
+        ],
+        "qualifiers": [
+            "APO:0000004",
+            "APO:0000117",
+            "APO:0000003",
+            "APO:0000005"
+        ]
+    },
+    {
+        "ontologyId": "APO:0000203",
+        "name": "hypoosmotic stress resistance",
+        "description": "The level of resistance to low osmolarity.",
+        "upstream": "APO:0000082",
+        "downstream": [
+
+        ],
+        "qualifiers": [
+            "APO:0000003"
+        ]
+    },
+    {
+        "ontologyId": "APO:0000204",
+        "name": "hyperosmotic stress resistance",
+        "description": "The level of resistance to high osmolarity.",
+        "upstream": "APO:0000082",
+        "downstream": [
+
+        ],
+        "qualifiers": [
+            "APO:0000117",
+            "APO:0000003",
+            "APO:0000004",
+            "APO:0000005"
+        ]
+    },
+    {
+        "ontologyId": "APO:0000082",
+        "name": "osmotic stress resistance",
+        "description": "The level of resistance to high or low osmolarity.",
+        "upstream": "APO:0000087",
+        "downstream": [
+            "APO:0000203",
+            "APO:0000204"
+        ],
+        "qualifiers": [
+            "APO:0000003",
+            "APO:0000117",
+            "APO:0000004",
+            "APO:0000005"
+        ]
+    },
+    {
+        "ontologyId": "APO:0000083",
+        "name": "oxidative stress resistance",
+        "description": "The level of resistance to oxidative stress.",
+        "upstream": "APO:0000087",
+        "downstream": [
+
+        ],
+        "qualifiers": [
+            "APO:0000003",
+            "APO:0000005",
+            "APO:0000004",
+            "APO:0000117"
+        ]
+    },
+    {
+        "ontologyId": "APO:0000090",
+        "name": "metal resistance",
+        "description": "The level of resistance to a specific metal or metals.",
+        "upstream": "APO:0000087",
+        "downstream": [
+
+        ],
+        "qualifiers": [
+            "APO:0000004",
+            "APO:0000003",
+            "APO:0000117",
+            "APO:0000246"
+        ]
+    },
+    {
+        "ontologyId": "APO:0000201",
+        "name": "acid pH resistance",
+        "description": "The level of resistance to acidic pH.",
+        "upstream": "APO:0000087",
+        "downstream": [
+
+        ],
+        "qualifiers": [
+            "APO:0000003",
+            "APO:0000117",
+            "APO:0000004"
+        ]
+    },
+    {
+        "ontologyId": "APO:0000202",
+        "name": "alkaline pH resistance",
+        "description": "The level of resistance to alkaline pH.",
+        "upstream": "APO:0000087",
+        "downstream": [
+
+        ],
+        "qualifiers": [
+            "APO:0000117",
+            "APO:0000004",
+            "APO:0000003",
+            "APO:0000005"
+        ]
+    },
+    {
+        "ontologyId": "APO:0000205",
+        "name": "ionic stress resistance",
+        "description": "The level of resistance to ionic stress.",
+        "upstream": "APO:0000087",
+        "downstream": [
+
+        ],
+        "qualifiers": [
+            "APO:0000004",
+            "APO:0000003"
+        ]
+    },
+    {
+        "ontologyId": "APO:0000087",
+        "name": "resistance to chemicals",
+        "description": "The level of resistance to exposure to chemicals.",
+        "upstream": "APO:0000080",
+        "downstream": [
+            "APO:0000082",
+            "APO:0000083",
+            "APO:0000090",
+            "APO:0000201",
+            "APO:0000202",
+            "APO:0000205"
+        ],
+        "qualifiers": [
+            "APO:0000004",
+            "APO:0000117",
+            "APO:0000003",
+            "APO:0000245",
+            "APO:0000005",
+            "APO:0000247",
+            "APO:0000249"
+        ]
+    },
+    {
+        "ontologyId": "APO:0000091",
+        "name": "starvation resistance",
+        "description": "The level of resistance to starvation conditions.",
+        "upstream": "APO:0000080",
+        "downstream": [
+
+        ],
+        "qualifiers": [
+            "APO:0000004",
+            "APO:0000003",
+            "APO:0000117"
+        ]
+    },
+    {
+        "ontologyId": "APO:0000085",
+        "name": "UV resistance",
+        "description": "The level of resistance to ultraviolet radiation.",
+        "upstream": "APO:0000084",
+        "downstream": [
+
+        ],
+        "qualifiers": [
+            "APO:0000003",
+            "APO:0000117",
+            "APO:0000004",
+            "APO:0000005"
+        ]
+    },
+    {
+        "ontologyId": "APO:0000086",
+        "name": "X ray resistance",
+        "description": "The level of resistance to X ray exposure.",
+        "upstream": "APO:0000194",
+        "downstream": [
+
+        ],
+        "qualifiers": [
+            "APO:0000003",
+            "APO:0000117",
+            "APO:0000005",
+            "APO:0000004"
+        ]
+    },
+    {
+        "ontologyId": "APO:0000195",
+        "name": "gamma ray resistance",
+        "description": "The level of resistance to gamma radiation.",
+        "upstream": "APO:0000194",
+        "downstream": [
+
+        ],
+        "qualifiers": [
+            "APO:0000003",
+            "APO:0000004",
+            "APO:0000117"
+        ]
+    },
+    {
+        "ontologyId": "APO:0000194",
+        "name": "ionizing radiation resistance",
+        "description": "The level of resistance to ionizing radiation.",
+        "upstream": "APO:0000084",
+        "downstream": [
+            "APO:0000086",
+            "APO:0000195"
+        ],
+        "qualifiers": [
+            "APO:0000003"
+        ]
+    },
+    {
+        "ontologyId": "APO:0000084",
+        "name": "radiation resistance",
+        "description": "The level of resistance to radiation.",
+        "upstream": "APO:0000080",
+        "downstream": [
+            "APO:0000085",
+            "APO:0000194"
+        ],
+        "qualifiers": [
+            "APO:0000003"
+        ]
+    },
+    {
+        "ontologyId": "APO:0000193",
+        "name": "resistance to enzymatic treatment",
+        "description": "The level of resistance to treatment with enzymes.",
+        "upstream": "APO:0000080",
+        "downstream": [
+
+        ],
+        "qualifiers": [
+            "APO:0000004",
+            "APO:0000003"
+        ]
+    },
+    {
+        "ontologyId": "APO:0000241",
+        "name": "freeze-thaw resistance",
+        "description": "The level of resistance to one or more cycles of freezing and thawing.",
+        "upstream": "APO:0000080",
+        "downstream": [
+
+        ],
+        "qualifiers": [
+            "APO:0000003",
+            "APO:0000004"
+        ]
+    },
+    {
+        "ontologyId": "APO:0000326",
+        "name": "desiccation resistance",
+        "description": "The level of resistance to air-drying or desiccation stress.",
+        "upstream": "APO:0000080",
+        "downstream": [
+
+        ],
+        "qualifiers": [
+            "APO:0000003",
+            "APO:0000005",
+            "APO:0000004"
+        ]
+    },
+    {
+        "ontologyId": "APO:0000327",
+        "name": "hydrostatic pressure resistance",
+        "description": "The level of resistance to increased hydrostatic pressure.",
+        "upstream": "APO:0000080",
+        "downstream": [
+
+        ],
+        "qualifiers": [
+            "APO:0000003",
+            "APO:0000004",
+            "APO:0000005"
+        ]
+    },
+    {
+        "ontologyId": "APO:0000080",
+        "name": "stress resistance",
+        "description": "The level of resistance to stress conditions.",
+        "upstream": "APO:0000066",
+        "downstream": [
+            "APO:0000092",
+            "APO:0000093",
+            "APO:0000215",
+            "APO:0000087",
+            "APO:0000091",
+            "APO:0000084",
+            "APO:0000193",
+            "APO:0000241",
+            "APO:0000326",
+            "APO:0000327"
+        ],
+        "qualifiers": [
+            "APO:0000004",
+            "APO:0000003"
+        ]
+    },
+    {
+        "ontologyId": "APO:0000198",
+        "name": "mutation frequency",
+        "description": "The frequency with which mutations occur.",
+        "upstream": "APO:0000143",
+        "downstream": [
+
+        ],
+        "qualifiers": [
+            "APO:0000003",
+            "APO:0000004",
+            "APO:0000117",
+            "APO:0000002",
+            "APO:0000246",
+            "APO:0000005"
+        ]
+    },
+    {
+        "ontologyId": "APO:0000046",
+        "name": "silencing",
+        "description": "Repression of transcription by altering the structure of chromatin, e.g. by conversion of large regions of DNA into an inaccessible state often called heterochromatin.",
+        "upstream": "APO:0000143",
+        "downstream": [
+
+        ],
+        "qualifiers": [
+            "APO:0000004",
+            "APO:0000005",
+            "APO:0000002",
+            "APO:0000003",
+            "APO:0000117"
+        ]
+    },
+    {
+        "ontologyId": "APO:0000047",
+        "name": "transposable element transposition",
+        "description": "Integration of a transposable element  into new positions in the genome.",
+        "upstream": "APO:0000143",
+        "downstream": [
+
+        ],
+        "qualifiers": [
+            "APO:0000003",
+            "APO:0000004",
+            "APO:0000117",
+            "APO:0000005",
+            "APO:0000002",
+            "APO:0000246"
+        ]
+    },
+    {
+        "ontologyId": "APO:0000144",
+        "name": "telomere length",
+        "description": "The average length of telomeres.",
+        "upstream": "APO:0000143",
+        "downstream": [
+
+        ],
+        "qualifiers": [
+            "APO:0000003",
+            "APO:0000004",
+            "APO:0000117",
+            "APO:0000002"
+        ]
+    },
+    {
+        "ontologyId": "APO:0000337",
+        "name": "polyploidy",
+        "description": "The gain of an entire set or sets of chromosomes beyond the usual complement.",
+        "upstream": "APO:0000143",
+        "downstream": [
+
+        ],
+        "qualifiers": [
+            "APO:0000246",
+            "APO:0000004"
+        ]
+    },
+    {
+        "ontologyId": "APO:0000208",
+        "name": "chromosome segregation",
+        "description": "The physical separation of chromosomes and their distribution to two or more sets during mitosis or meiosis.",
+        "upstream": "APO:0000143",
+        "downstream": [
+
+        ],
+        "qualifiers": [
+            "APO:0000002",
+            "APO:0000003",
+            "APO:0000249",
+            "APO:0000117",
+            "APO:0000251",
+            "APO:0000005"
+        ]
+    },
+    {
+        "ontologyId": "APO:0000225",
+        "name": "mitotic recombination",
+        "description": "Measures of the rate of recombination or total recombination observed during the mitotic cell cycle.",
+        "upstream": "APO:0000143",
+        "downstream": [
+
+        ],
+        "qualifiers": [
+            "APO:0000004",
+            "APO:0000003",
+            "APO:0000117",
+            "APO:0000246",
+            "APO:0000245",
+            "APO:0000002",
+            "APO:0000005"
+        ]
+    },
+    {
+        "ontologyId": "APO:0000336",
+        "name": "aneuploidy",
+        "description": "The gain or loss of a chromosome, so that the cell has a number of chromosomes that is not a multiple of the usual complement. Aneuploidy may also be partial, affecting a large segment of a chromosome that is lost or translocated to a different chromosome.",
+        "upstream": "APO:0000143",
+        "downstream": [
+
+        ],
+        "qualifiers": [
+            "APO:0000004",
+            "APO:0000002"
+        ]
+    },
+    {
+        "ontologyId": "APO:0000143",
+        "name": "chromosome/plasmid maintenance",
+        "description": "The stable maintenance of chromosomes or plasmids.",
+        "upstream": "APO:0000066",
+        "downstream": [
+            "APO:0000198",
+            "APO:0000046",
+            "APO:0000047",
+            "APO:0000144",
+            "APO:0000337",
+            "APO:0000208",
+            "APO:0000225",
+            "APO:0000336"
+        ],
+        "qualifiers": [
+            "APO:0000002",
+            "APO:0000003",
+            "APO:0000245",
+            "APO:0000252",
+            "APO:0000004",
+            "APO:0000117"
+        ]
+    },
+    {
+        "ontologyId": "APO:0000275",
+        "name": "prion inheritance",
+        "description": "The transmission of prions from a mother cell to a daughter cell during budding.",
+        "upstream": "APO:0000274",
+        "downstream": [
+
+        ],
+        "qualifiers": [
+            "APO:0000003",
+            "APO:0000005",
+            "APO:0000004",
+            "APO:0000002"
+        ]
+    },
+    {
+        "ontologyId": "APO:0000276",
+        "name": "prion formation",
+        "description": "The conversion from the state of being prion-free to the state of having prions.",
+        "upstream": "APO:0000274",
+        "downstream": [
+
+        ],
+        "qualifiers": [
+            "APO:0000003",
+            "APO:0000004",
+            "APO:0000002"
+        ]
+    },
+    {
+        "ontologyId": "APO:0000277",
+        "name": "prion loss",
+        "description": "The conversion from the state of having prions to the state of being prion-free.",
+        "upstream": "APO:0000274",
+        "downstream": [
+
+        ],
+        "qualifiers": [
+            "APO:0000005",
+            "APO:0000003",
+            "APO:0000004",
+            "APO:0000117"
+        ]
+    },
+    {
+        "ontologyId": "APO:0000274",
+        "name": "prion state",
+        "description": "The presence or absence of prions.",
+        "upstream": "APO:0000066",
+        "downstream": [
+            "APO:0000275",
+            "APO:0000276",
+            "APO:0000277"
+        ],
+        "qualifiers": [
+            "APO:0000002"
+        ]
+    },
+    {
+        "ontologyId": "APO:0000155",
+        "name": "apoptosis",
+        "description": "An energy-dependent, programmed form of cell death that is characterized by phenotypic markers such as increased levels of reactive oxygen species (often detected via DHE staining), externalization of phosphatidylserine (measured by annexin V staining), and DNA fragmentation (detected using the TUNEL assay). Other processes observed during apoptosis include chromosome condensation and breakdown of mitochondria, including loss of membrane potential and release of cytochrome c. Cells undergoing apoptosis do not lose plasma membrane integrity (measured by propidium iodide staining) until late in the process.",
+        "upstream": "APO:0000312",
+        "downstream": [
+
+        ],
+        "qualifiers": [
+            "APO:0000246",
+            "APO:0000004",
+            "APO:0000005",
+            "APO:0000117",
+            "APO:0000003",
+            "APO:0000251"
+        ]
+    },
+    {
+        "ontologyId": "APO:0000220",
+        "name": "necrotic cell death",
+        "description": "A form of cell death that is distinct from apoptosis. Cells undergoing necrotic cell death undergo overall destruction. They can be distinguished from apoptotic cells because they lose membrane integrity, which only happens late in apoptosis (positive propidium iodide staining), and do not externalize phosphatidylserine (measured by annexin V staining) as do apoptotic cells.",
+        "upstream": "APO:0000312",
+        "downstream": [
+
+        ],
+        "qualifiers": [
+            "APO:0000004",
+            "APO:0000003"
+        ]
+    },
+    {
+        "ontologyId": "APO:0000312",
+        "name": "cell death",
+        "description": "The cessation of the life of an individual cell.",
+        "upstream": "APO:0000066",
+        "downstream": [
+            "APO:0000155",
+            "APO:0000220"
+        ],
+        "qualifiers": [
+            "APO:0000004",
+            "APO:0000003",
+            "APO:0000005",
+            "APO:0000245",
+            "APO:0000246"
+        ]
+    },
+    {
+        "ontologyId": "APO:0000066",
+        "name": "cellular processes",
+        "description": "Processes occurring at the cellular level.",
+        "upstream": "phenotype",
+        "downstream": [
+            "APO:0000072",
+            "APO:0000073",
+            "APO:0000080",
+            "APO:0000143",
+            "APO:0000274",
+            "APO:0000312"
+        ],
+        "qualifiers": [
+
+        ]
+    },
+    {
+        "ontologyId": "APO:0000112",
+        "name": "inviable",
+        "description": "The inability to grow under standard growth conditions. For S. cerevisiae, this means that visible colonies are not formed from single cells on complete glucose medium (YPD) plates at 30 deg C under normal atmospheric conditions.",
+        "upstream": "APO:0000217",
+        "downstream": [
+
+        ],
+        "qualifiers": [
+
+        ]
+    },
+    {
+        "ontologyId": "APO:0000113",
+        "name": "viable",
+        "description": "The ability to grow under standard growth conditions. For S. cerevisiae, this means that visible colonies are formed from single cells on complete glucose medium (YPD) plates at 30 deg C under normal atmospheric conditions.",
+        "upstream": "APO:0000217",
+        "downstream": [
+
+        ],
+        "qualifiers": [
+
+        ]
+    },
+    {
+        "ontologyId": "APO:0000217",
+        "name": "essentiality",
+        "description": "The essentiality of a gene for survival under standard conditions for growth of that organism.",
+        "upstream": "phenotype",
+        "downstream": [
+            "APO:0000112",
+            "APO:0000113"
+        ],
+        "qualifiers": [
+
+        ]
+    },
+    {
+        "ontologyId": "APO:0000288",
+        "name": "adhesion",
+        "description": "Adherence to a substrate in the environment or in a host.",
+        "upstream": "APO:0000287",
+        "downstream": [
+
+        ],
+        "qualifiers": [
+            "APO:0000004",
+            "APO:0000003",
+            "APO:0000005"
+        ]
+    },
+    {
+        "ontologyId": "APO:0000048",
+        "name": "virulence",
+        "description": "The ability to cause disease in another organism.",
+        "upstream": "APO:0000287",
+        "downstream": [
+
+        ],
+        "qualifiers": [
+            "APO:0000004"
+        ]
+    },
+    {
+        "ontologyId": "APO:0000287",
+        "name": "interaction with host/environment",
+        "description": "Processes relating to interaction with the environment or with a host organism.",
+        "upstream": "phenotype",
+        "downstream": [
+            "APO:0000288",
+            "APO:0000048"
+        ],
+        "qualifiers": [
+
+        ]
+    },
+    {
+        "ontologyId": "APO:0000110",
+        "name": "competitive fitness",
+        "description": "The ability of a mutant strain to grow or survive under conditions of direct competition with wild type or other mutants.",
+        "upstream": "APO:0000216",
+        "downstream": [
+
+        ],
+        "qualifiers": [
+            "APO:0000003",
+            "APO:0000117",
+            "APO:0000004"
+        ]
+    },
+    {
+        "ontologyId": "APO:0000111",
+        "name": "viability",
+        "description": "The proportion of cells in a sample that are viable, i.e. able to form colonies. Often measured by spotting aliquots of a dilution series on a plate.",
+        "upstream": "APO:0000216",
+        "downstream": [
+
+        ],
+        "qualifiers": [
+            "APO:0000003",
+            "APO:0000004",
+            "APO:0000117"
+        ]
+    },
+    {
+        "ontologyId": "APO:0000152",
+        "name": "haploinsufficient",
+        "description": "The heterozygous diploid displays a decreased growth rate relative to a diploid that is homozygous wild type at that locus.",
+        "upstream": "APO:0000216",
+        "downstream": [
+
+        ],
+        "qualifiers": [
+
+        ]
+    },
+    {
+        "ontologyId": "APO:0000330",
+        "name": "haploproficient",
+        "description": "The heterozygous diploid displays an increased growth rate relative to a diploid that is homozygous wild type at that locus.",
+        "upstream": "APO:0000216",
+        "downstream": [
+
+        ],
+        "qualifiers": [
+
+        ]
+    },
+    {
+        "ontologyId": "APO:0000216",
+        "name": "fitness",
+        "description": "The ability of an organism to reproduce and to produce viable progeny.",
+        "upstream": "phenotype",
+        "downstream": [
+            "APO:0000110",
+            "APO:0000111",
+            "APO:0000152",
+            "APO:0000330"
+        ],
+        "qualifiers": [
+            "APO:0000004"
+        ]
+    },
+    {
+        "ontologyId": "phenotype",
+        "name": "Yeast Phenotype Ontology",
+        "description": "Features of Saccharomyces cerevisiae cells, cultures, or colonies that can be detected, observed, measured, or monitored.",
+        "upstream": null,
+        "downstream": [
+            "APO:0000094",
+            "APO:0000049",
+            "APO:0000023",
+            "APO:0000066",
+            "APO:0000217",
+            "APO:0000287",
+            "APO:0000216"
+        ],
+        "qualifiers": [
+
+        ]
+    }
+]
+}
