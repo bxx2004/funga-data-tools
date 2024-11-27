@@ -90,7 +90,7 @@ class SGDDownloader(Downloader):
             cache["extra"] = {}
             reference = ["https://pubmed.ncbi.nlm.nih.gov/"+str(phe["reference"]["pubmed_id"])]
             if phe["experiment"]["link"]:
-                reference.append(phe["experiment"]["link"])
+                reference.append("https://www.yeastgenome.org/"+phe["experiment"]["link"])
             cache["phenotype"] = {
                 "description": phe["phenotype"]["display_name"],
                 "reference":reference,
