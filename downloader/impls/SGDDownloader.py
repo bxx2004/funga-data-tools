@@ -127,8 +127,15 @@ class SGDDownloader(Downloader):
     def grab_sequence(self,id):
         api_url = base_url + "locus/" + id + "/sequence_details"
         response = requests.get(api_url).json()
-        dna = response["genomic_dna"][0]["residues"]
-        polypeptide = response["protein"][0]["residues"]
+        dna = None
+        polypeptide = None
+        if "protein" in response:
+            if len(response["protein"]) != 0:
+                polypeptide = response["protein"][0]["residues"]
+        if "genomic_dna" in response:
+            if len(response["genomic_dna"]) != 0:
+                dna = response["genomic_dna"][0]["residues"]
+
         return {
             "dna":dna,
             "polypeptide":polypeptide
