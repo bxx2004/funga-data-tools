@@ -119,7 +119,7 @@ class SGDDownloader(Downloader):
                 "gene2": interact["locus2"]["link"].split("/")[-1],
             }
             reference = ["https://pubmed.ncbi.nlm.nih.gov/"+str(interact["reference"]["pubmed_id"])]
-            cache["references"] = reference
+            cache["reference"] = reference
             cache["extra"] = {}
             self.download_cache.append(cache)
 
