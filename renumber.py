@@ -73,7 +73,8 @@ def renumber_phenotype(file:str):
 def generate_id():
     global index
     index = index + 1
-    return f"FUNGA-{name.upper()}-{index}"
+    #F(G|S)(FChar1|GChar1)(GChar3|SChar3){NUMBER}
+    return f"F{name.upper()}{index}"
 
 name = ""
 path = ""

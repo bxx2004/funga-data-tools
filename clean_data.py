@@ -9,8 +9,6 @@ path = ""
 output = ""
 mapping = {}
 
-
-
 def get_sha256(input_str):
     sha256_hash = hashlib.sha256()
     sha256_hash.update(input_str.encode('utf-8'))
@@ -18,9 +16,9 @@ def get_sha256(input_str):
     return sha256_value
 
 def try_create_dir():
-    os.makedirs(os.path.join(path,f"{output}/gene"))
-    os.makedirs(os.path.join(path,f"{output}/gene-gene"))
-    os.makedirs(os.path.join(path,f"{output}/gene-phenotype"))
+    os.makedirs(f"{output}/gene")
+    os.makedirs(f"{output}/gene-gene")
+    os.makedirs(f"{output}/gene-phenotype")
 
 def loadFile():
     global mapping
@@ -41,7 +39,7 @@ def clean(dir,type):
             if get_sha256(str(gene)) not in gene_cache:
                 gene_cache.add(get_sha256(str(gene)))
                 out_cache.append(gene)
-        with open(os.path.join(path,f"{output}/{type}/" + gf),'w') as f:
+        with open(f"{output}/{type}/" + gf,'w') as f:
             f.write(json.dumps(out_cache))
 
 if __name__ == '__main__':
