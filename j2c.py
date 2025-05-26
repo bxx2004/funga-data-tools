@@ -150,14 +150,14 @@ class JSONToCSVConverter:
 
     def _transfer_phenotype_ontology(self, ele):
         """Optimized phenotype ontology transfer"""
-        source = json.dumps({"name": "SGD", "link": "https://www.yeastgenome.org"})
+        source = json.dumps({"name": "SGD1", "link": "https://www.yeastgenome.org"})
         return f"{ele.get('ontologyId', '')}\t{ele.get('name', '')}\t{ele.get('upstream', '')}\t" \
                f"{ele.get('description', '')}\t{json.dumps(ele.get('downstream', []))}\t" \
                f"{json.dumps(ele.get('qualifiers', []))}\t{source}"
 
     def _transfer_phenotype_ontology_qualifier(self, ele):
         """Optimized phenotype ontology qualifier transfer"""
-        source = json.dumps({"name": "SGD", "link": "https://www.yeastgenome.org"})
+        source = json.dumps({"name": "SGD1", "link": "https://www.yeastgenome.org"})
         return f"{ele.get('qualifierId', '')}\t{ele.get('name', '')}\t{ele.get('upstream', '')}\t" \
                f"{ele.get('description', '')}\t{json.dumps(ele.get('downstream', []))}\t{source}"
 

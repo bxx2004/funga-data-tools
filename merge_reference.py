@@ -2,99 +2,135 @@ import json
 import os
 import sys
 import hashlib
-
-
+from tqdm import tqdm
+from typing import Dict, Any, List
 
 path = ""
 output = ""
 mapping = {}
 
 
+def get_sha256(input_str: str) -> str:
+    """Generate SHA256 hash of input string."""
+    return hashlib.sha256(input_str.encode('utf-8')).hexdigest()
 
-def get_sha256(input_str):
-    sha256_hash = hashlib.sha256()
-    sha256_hash.update(input_str.encode('utf-8'))
-    sha256_value = sha256_hash.hexdigest()
-    return sha256_value
 
-def try_create_dir():
-    os.makedirs(f"{output}/gene-gene")
-    os.makedirs(f"{output}/gene-phenotype")
+def try_create_dir() -> None:
+    """Create output directories if they don't exist."""
+    os.makedirs(f"{output}/gene-gene", exist_ok=True)
+    os.makedirs(f"{output}/gene-phenotype", exist_ok=True)
 
-def loadFile():
+
+def loadFile() -> None:
+    """Main function to load and process files."""
     global mapping
     try_create_dir()
-    gene_gene_dir = os.path.join(path,"gene-gene")
-    phenotype_dir = os.path.join(path,"gene-phenotype")
+    gene_gene_dir = os.path.join(path, "gene-gene")
+    phenotype_dir = os.path.join(path, "gene-phenotype")
+
+    print("Processing gene-gene relationships...")
     merge_gene_gene(gene_gene_dir)
+
+    print("\nProcessing gene-phenotype relationships...")
     merge_gene_phenotype(phenotype_dir)
 
-def get_gg_unique_id(obj):
+
+def get_gg_unique_id(obj: Dict[str, Any]) -> str:
+    """Generate unique ID for gene-gene relationship."""
     return get_sha256(obj['source']['gene1'] + obj['source']['gene2'] + obj['type'])
 
-def get_gp_unique_id(obj):
+
+def get_gp_unique_id(obj: Dict[str, Any]) -> str:
+    """Generate unique ID for gene-phenotype relationship."""
     return get_sha256(obj['source']['gene'] + obj['phenotype']['description'])
 
-def split_dict_by_count(dictionary, count):
-    sub_dicts = []
-    keys = list(dictionary.keys())
-    total_keys = len(keys)
 
-    for i in range(0, total_keys, count):
-        sub_dict = {k: dictionary[k] for k in keys[i:i + count]}
-        sub_dicts.append(sub_dict)
+def split_dict_by_count(dictionary: Dict[str, Any], count: int) -> List[Dict[str, Any]]:
+    """Split dictionary into chunks of specified size."""
+    return [dict(list(dictionary.items())[i:i + count])
+            for i in range(0, len(dictionary), count)]
 
-    return sub_dicts
-index = 0
-def generate_id():
-    global index
-    index += 1
-    return f"{index}.json"
 
-def merge_gene_gene(dir):
-    cache = dict()
+class FileIdGenerator:
+    """Generator for sequential file IDs."""
+
+    def __init__(self):
+        self.index = 0
+
+    def generate(self) -> str:
+        self.index += 1
+        return f"{self.index}.json"
+
+
+def merge_gene_gene(dir_path: str) -> None:
+    """Merge gene-gene relationship files."""
+    cache: Dict[str, Dict[str, Any]] = {}
     out_dir = f"{output}/gene-gene"
-    for file in os.listdir(dir):
-        print(os.path.join(dir,file))
-        with open(os.path.join(dir,file),"r") as arr_file:
-            arr = json.loads(arr_file.read())
-            for obj in arr:
-                if get_gg_unique_id(obj) in cache.keys():
-                    if "reference" in obj:
-                        cache[get_gg_unique_id(obj)]['reference'].extend(obj['reference'])
-                    else:
-                        cache[get_gg_unique_id(obj)]['reference'].extend(obj['references'])
-                else:
+    file_id_gen = FileIdGenerator()
+
+    # Get all files with progress bar
+    files = [f for f in os.listdir(dir_path) if f.endswith('.json')]
+
+    for file in tqdm(files, desc="Processing files"):
+        file_path = os.path.join(dir_path, file)
+        try:
+            with open(file_path, "r") as arr_file:
+                arr = json.load(arr_file)
+                for obj in arr:
+                    obj_id = get_gg_unique_id(obj)
+
+                    # Handle references consistently
                     if "references" in obj:
-                        obj["reference"] = obj['references']
-                        obj.pop("references")
-                    cache[get_gg_unique_id(obj)] = obj
+                        obj["reference"] = obj.pop("references")
+
+                    if obj_id in cache:
+                        cache[obj_id]['reference'].extend(obj.get('reference', []))
+                    else:
+                        cache[obj_id] = obj
+        except Exception as e:
+            print(f"\nError processing {file_path}: {str(e)}")
+            continue
+
+    # Write output in chunks with progress
+    for chunk in tqdm(split_dict_by_count(cache, 1000), desc="Writing output"):
+        output_data = list(chunk.values())
+        output_file = os.path.join(out_dir, file_id_gen.generate())
+        with open(output_file, "w") as out_file:
+            json.dump(output_data, out_file)
 
 
-    for dic in split_dict_by_count(cache, 1000):
-        gs = []
-        for value in dic.values():
-            gs.append(value)
-        with open(os.path.join(out_dir,generate_id()),"w") as out_file:
-            out_file.write(json.dumps(gs))
-
-def merge_gene_phenotype(dir):
-    cache = dict()
+def merge_gene_phenotype(dir_path: str) -> None:
+    """Merge gene-phenotype relationship files."""
+    cache: Dict[str, Dict[str, Any]] = {}
     out_dir = f"{output}/gene-phenotype"
-    for file in os.listdir(dir):
-        with open(os.path.join(dir,file),"r") as arr_file:
-            arr = json.loads(arr_file.read())
-            for obj in arr:
-                if get_gp_unique_id(obj) in cache.keys():
-                    cache[get_gp_unique_id(obj)]['phenotype']['reference'].extend(obj['phenotype']['reference'])
-                else:
-                    cache[get_gp_unique_id(obj)] = obj
-    for dic in split_dict_by_count(cache, 1000):
-        gs = []
-        for value in dic.values():
-            gs.append(value)
-        with open(os.path.join(out_dir,generate_id()),"w") as out_file:
-            out_file.write(json.dumps(gs))
+    file_id_gen = FileIdGenerator()
+
+    # Get all files with progress bar
+    files = [f for f in os.listdir(dir_path) if f.endswith('.json')]
+
+    for file in tqdm(files, desc="Processing files"):
+        file_path = os.path.join(dir_path, file)
+        try:
+            with open(file_path, "r") as arr_file:
+                arr = json.load(arr_file)
+                for obj in arr:
+                    obj_id = get_gp_unique_id(obj)
+                    if obj_id in cache:
+                        cache[obj_id]['phenotype']['reference'].extend(
+                            obj['phenotype']['reference'])
+                    else:
+                        cache[obj_id] = obj
+        except Exception as e:
+            print(f"\nError processing {file_path}: {str(e)}")
+            continue
+
+    # Write output in chunks with progress
+    for chunk in tqdm(split_dict_by_count(cache, 1000), desc="Writing output"):
+        output_data = list(chunk.values())
+        output_file = os.path.join(out_dir, file_id_gen.generate())
+        with open(output_file, "w") as out_file:
+            json.dump(output_data, out_file)
+
 
 if __name__ == '__main__':
     if len(sys.argv) == 3:

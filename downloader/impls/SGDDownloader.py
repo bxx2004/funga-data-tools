@@ -88,13 +88,13 @@ class SGDDownloader(Downloader):
         Thread(target=self.start_gene_phenotype).start()
 
     def mapOntologyId(self,name):
-        a = json.loads(open("SGD/phenotype-ontology.json",'r').read())
+        a = json.loads(open("SGD1/phenotype-ontology.json",'r').read())
         for o in a["datas"]:
             if o["name"] == name:
                 return o["ontologyId"]
         return ""
     def mapQualifierIdId(self,name):
-        a = json.loads(open("SGD/phenotype-ontology-qualifier.json",'r').read())
+        a = json.loads(open("SGD1/phenotype-ontology-qualifier.json",'r').read())
         for o in a["datas"]:
             if o["name"] == name:
                 return o["qualifierId"]
@@ -146,7 +146,7 @@ class SGDDownloader(Downloader):
             cache = {}
             cache["type"] = interact["interaction_type"]
             cache["source"] = {
-                "name": interact["source"]["display_name"] + " | SGD",
+                "name": interact["source"]["display_name"] + " | SGD1",
                 "link": "https://www.yeastgenome.org/locus/" +interact["locus1"]["link"].split("/")[-1] + "/interaction",
                 "gene1":interact["locus1"]["link"].split("/")[-1],
                 "gene2": interact["locus2"]["link"].split("/")[-1],

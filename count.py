@@ -1,29 +1,54 @@
 import json
 import os
 import sys
+from tqdm import tqdm
 
-path = ""
 
-def loadFile():
-    global mapping
-    gene_dir = os.path.join(path,"gene")
-    gene_gene_dir = os.path.join(path,"gene-gene")
-    phenotype_dir = os.path.join(path,"gene-phenotype")
-    count(gene_dir,"gene")
-    count(gene_gene_dir,"gene-gene")
-    count(phenotype_dir,"gene-phenotype")
+def load_file(input_path):
+    """Load and count entries from gene-related JSON files with progress tracking."""
+    directories = {
+        "gene": os.path.join(input_path, "gene"),
+        "gene-gene": os.path.join(input_path, "gene-gene"),
+        "gene-phenotype": os.path.join(input_path, "gene-phenotype")
+    }
 
-def count(dir,type):
-    size = 0
-    for gf in os.listdir(dir):
-        gene_arr = json.loads(open(os.path.join(dir,gf),'r').read())
-        size += len(gene_arr)
-    print(f"{type}: {size}")
+    results = {}
+
+    for name, directory in directories.items():
+        total_files = 0
+        total_entries = 0
+
+        # First pass: count total files for progress bar
+        if os.path.exists(directory):
+            file_list = [f for f in os.listdir(directory) if f.endswith('.json')]
+            total_files = len(file_list)
+
+            # Second pass: process files with progress bar
+            with tqdm(total=total_files, desc=f"Processing {name}", unit="file") as pbar:
+                for filename in file_list:
+                    filepath = os.path.join(directory, filename)
+                    try:
+                        with open(filepath, 'r', encoding='utf-8') as f:
+                            data = json.load(f)
+                            total_entries += len(data)
+                    except (json.JSONDecodeError, UnicodeDecodeError) as e:
+                        print(f"\nError processing {filepath}: {e}", file=sys.stderr)
+                    pbar.update(1)
+
+        results[name] = total_entries
+
+    # Print results
+    for name, count in results.items():
+        print(f"{name}: {count:,}")
+
+
 if __name__ == '__main__':
     if len(sys.argv) == 2:
         path = sys.argv[1]
-        loadFile()
+        if not os.path.exists(path):
+            print(f"Error: Path '{path}' does not exist", file=sys.stderr)
+            sys.exit(1)
+        load_file(path)
     else:
         print("Usage: count.py <input-path>")
         print("Example:")
-        print("  count.py zfin")
